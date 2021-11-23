@@ -1,0 +1,459 @@
+{% assign heading_font = section.settings.heading_custom_font %}
+{% if heading_font == blank %}
+{% assign heading_font = section.settings.heading_font.family %}
+{% endif %}
+
+{% assign subheading_font = section.settings.subheading_custom_font %}
+{% if subheading_font == blank %}
+{% assign subheading_font = section.settings.subheading_font.family %}
+{% endif %}
+
+{% assign article_title_font = section.settings.article_title_custom_font %}
+{% if article_title_font == blank %}
+{% assign article_title_font = section.settings.article_title_font.family %}
+{% endif %}
+
+{% assign article_excerpt_font = section.settings.article_excerpt_custom_font %}
+{% if article_excerpt_font == blank %}
+{% assign article_excerpt_font = section.settings.article_excerpt_font.family %}
+{% endif %}
+
+
+{% paginate blog.articles by section.settings.article_pagination_num %}
+
+<link rel="preload" href="{{ section.settings.header_image | img_url: '1440x' }}" as="image">
+
+<!-- Blog Header -->
+<header class="blog-header layout-{{ section.settings.header_layout }}">
+  <div class="page-width">
+    <h1 class="blog-heading">{{ page_title }}</h1>
+    <div class="blog-subheading">
+      {% assign paragraphs = section.settings.subheading_text | newline_to_br | strip_newlines | split: '<br />' %}
+      {% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+    </div>
+  </div>
+</header>
+<!-- End Blog Header -->
+
+<!-- Blog Categories + Search -->
+<div class="page-width">
+  <ul class="blog-menu">
+  {% for tag in blog.all_tags %}
+  <li><a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a></li>
+  {% endfor %}
+  <li class="blog-search">
+    <form method="get" action="/search">
+      <input type="hidden" name="type" value="article" />
+      <input type="hidden" name="options[prefix]" value="last">
+      <input type="text" name="q" value="{{ search.terms | escape }}" placeholder="Search blog..." class="input-group-field">
+      <button type="button" class="btn--link site-header__icon site-header__search-toggle" data-predictive-search-open-drawer>
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+<span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span></button>
+    </form></li>
+  </ul>
+</div>
+
+<!-- Blog Previews -->
+<div class="page-width">
+  <div class="blog-list" id="AjaxinateContainer">
+    {%- for article in blog.articles -%}
+    <article class="article-preview">
+      <div class="article-image">
+        <a href="{{ article.url }}"><img src="{{ article.image | img_url: '600x600', crop: 'center' }}" /></a>
+      </div>
+      <div class="article-info">
+        <a href="{{ article.url }}"><h2 class="article-title">{{ article.title | escape }}</h2></a>
+        <p class="article-excerpt">{{ article.excerpt | strip_html }}</p>
+        <a href="{{ article.url }}" class="article-link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">{{ 'blogs.article.read_more' | t }} <svg width="64" height="31" viewBox="0 0 64 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.2667 13.7305C63.266 13.7297 63.2653 13.7288 63.2645 13.7281L50.2015 0.728112C49.2229 -0.24576 47.64 -0.242136 46.6659 0.736611C45.6919 1.71523 45.6956 3.2981 46.6742 4.2721L55.4447 13.0001H2.5C1.11925 13.0001 0 14.1193 0 15.5001C0 16.8808 1.11925 18.0001 2.5 18.0001H55.4446L46.6744 26.728C45.6957 27.702 45.692 29.2849 46.666 30.2635C47.6401 31.2424 49.2231 31.2458 50.2016 30.272L63.2646 17.2721C63.2653 17.2713 63.266 17.2704 63.2668 17.2697C64.246 16.2924 64.2428 14.7045 63.2667 13.7305Z" fill="black"/>
+</svg></a>
+      </div>
+    </article>
+    {%- endfor -%}
+  </div> <!-- .blog-list -->
+</div> <!-- .page-width -->
+<!-- End Blog Previews -->
+
+<div id="AjaxinatePagination" class="blog-infinite-load">
+  {% if paginate.next %}
+    <a href="{{ paginate.next.url }}" class="btn btn--tertiary btn--large">Load More</a>
+  {% endif %}
+</div>
+
+{% endpaginate %}
+
+
+
+<style type="text/css">
+
+.blog-header{
+  background-image: url("{{ section.settings.header_image | img_url: '1440x' }}");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.blog-header .page-width{
+  max-width: 70%;
+}
+.blog-header.layout-left{
+  text-align: left;
+}
+.blog-header.layout-center{
+  text-align: center;
+}
+.blog-header.layout-right{
+  text-align: right;
+}
+.blog-heading{
+  font-family: {{ heading_font }}, Helvetica, sans-serif;
+  font-size: {{ section.settings.heading_font_size }}px;
+  font-weight: {{ section.settings.heading_font.weight }};
+  color: #fff;
+  color: {{ section.settings.heading_color }};
+  line-height: 1;
+  margin-bottom: 60px;
+}
+.blog-menu{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 60px;
+  justify-content: flex-end;
+  list-style: none !important;
+}
+.blog-menu li{
+  margin-left: 30px;
+}
+.blog-search{
+    list-style: none !important;
+}
+.blog-search{
+  position: relative;
+  top: -2px;
+}
+.blog-search button{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -14px;
+  padding: 0;
+}
+.blog-search input[type="text"]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid {{ settings.color_text }};
+  padding: 10px 30px 5px 0;
+  padding-right: 30px;
+  outline: none !important;
+}
+.blog-subheading{
+  max-width: 360px;
+  font-family: {{ subheading_font }}, Helvetica, sans-serif;
+  font-size: {{ section.settings.subheading_font_size }}px;
+  font-weight: {{ section.settings.subheading_font.weight }};
+}
+.layout-center .blog-subheading{
+  margin: 0 auto;
+}
+.layout-right .blog-subheading{
+  float: right;
+}
+.blog-subheading p{
+  color: #fff;
+  margin: 0 0 30px;
+  line-height: 1.4;
+}
+
+.blog-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.article-preview{
+  display: flex;
+}
+.article-image{
+  width: 50%;
+}
+.article-image a{
+  display: block;
+}
+.article-image img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.article-info{
+  width: 50%;
+  padding-left: 20px;
+}
+.article-title{
+  font-family: {{ article_title_font }}, Helvetica, sans-serif;
+  font-weight: {{ section.settings.article_title_font.weight }};
+  font-size: {{ section.settings.article_title_font_size }}px;
+  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #000;
+  color: {{ section.settings.article_title_color }};
+  line-height: 1.3;
+}
+.article-excerpt{
+  font-family: {{ article_excerpt_font }}, Helvetica, sans-serif;
+  font-weight: {{ section.settings.article_excerpt_font.weight }};
+  font-size: {{ section.settings.article_excerpt_font_size }}px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+  color: #000;
+  line-height: 1.4;
+}
+.article-link{
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000;
+}
+.article-link svg{
+  width: 32px;
+  height: auto;
+  position: relative;
+  top: 1px;
+  padding-left: 5px;
+}
+
+.blog-infinite-load{
+  padding-top: 50px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .blog-heading{
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .blog-header .page-width{
+    max-width: 100%;
+  }
+  .blog-subheading{
+    font-size: 14px;
+    max-width: 72%;
+  }
+  .blog-subheading p{
+    margin-bottom: 15px;
+  }
+
+  .article-preview{
+    flex-direction: column;
+  }
+  .blog-menu{
+    align-items: normal;
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+  .blog-menu li{
+    margin-left: 15px;
+  }
+  .blog-menu .blog-search{
+    max-width: 300px;
+    flex-basis: 100%;
+    margin: 15px 0 0 0;
+  }
+  .blog-search input[type="text"]{
+    width: 100%;
+  }
+
+  .blog-list{
+    display: block;
+  }
+  .article-preview{
+    margin-bottom: 30px;
+  }
+  .article-preview > div{
+    width: 100%;
+  }
+  .article-image{
+    margin-bottom: 15px;
+  }
+  .article-info{
+    padding: 0 15px;
+  }
+}
+</style>
+
+<script type="text/javascript">
+"use strict";var Ajaxinate=function(t){var e=t||{};this.settings=Object.assign({method:"scroll",container:"#AjaxinateContainer",pagination:"#AjaxinatePagination",offset:0,loadingText:"Loading",callback:null},e),this.addScrollListeners=this.addScrollListeners.bind(this),this.addClickListener=this.addClickListener.bind(this),this.checkIfPaginationInView=this.checkIfPaginationInView.bind(this),this.stopMultipleClicks=this.stopMultipleClicks.bind(this),this.removeClickListener=this.removeClickListener.bind(this),this.removeScrollListener=this.removeScrollListener.bind(this),this.destroy=this.destroy.bind(this),this.containerElement=document.querySelector(this.settings.container),this.paginationElement=document.querySelector(this.settings.pagination),this.initialize()};Ajaxinate.prototype.initialize=function(){this.containerElement&&{click:this.addClickListener,scroll:this.addScrollListeners}[this.settings.method]()},Ajaxinate.prototype.addScrollListeners=function(){this.paginationElement&&(document.addEventListener("scroll",this.checkIfPaginationInView),window.addEventListener("resize",this.checkIfPaginationInView),window.addEventListener("orientationchange",this.checkIfPaginationInView))},Ajaxinate.prototype.addClickListener=function(){this.paginationElement&&(this.nextPageLinkElement=this.paginationElement.querySelector("a"),this.clickActive=!0,void 0!==this.nextPageLinkElement&&null!==this.nextPageLinkElement&&this.nextPageLinkElement.addEventListener("click",this.stopMultipleClicks))},Ajaxinate.prototype.stopMultipleClicks=function(t){t.preventDefault(),this.clickActive&&(this.nextPageLinkElement.innerText=this.settings.loadingText,this.nextPageUrl=this.nextPageLinkElement.href,this.clickActive=!1,this.loadMore())},Ajaxinate.prototype.checkIfPaginationInView=function(){var t=this.paginationElement.getBoundingClientRect().top-this.settings.offset,e=this.paginationElement.getBoundingClientRect().bottom+this.settings.offset;t<=window.innerHeight&&e>=0&&(this.nextPageLinkElement=this.paginationElement.querySelector("a"),this.removeScrollListener(),this.nextPageLinkElement&&(this.nextPageLinkElement.innerText=this.settings.loadingText,this.nextPageUrl=this.nextPageLinkElement.href,this.loadMore()))},Ajaxinate.prototype.loadMore=function(){this.request=new XMLHttpRequest,this.request.onreadystatechange=function(){if(4===this.request.readyState&&200===this.request.status){var t=this.request.responseXML.querySelectorAll(this.settings.container)[0],e=this.request.responseXML.querySelectorAll(this.settings.pagination)[0];this.containerElement.insertAdjacentHTML("beforeend",t.innerHTML),this.paginationElement.innerHTML=e.innerHTML,this.settings.callback&&"function"==typeof this.settings.callback&&this.settings.callback(this.request.responseXML),this.initialize()}}.bind(this),this.request.open("GET",this.nextPageUrl),this.request.responseType="document",this.request.send()},Ajaxinate.prototype.removeClickListener=function(){this.nextPageLinkElement.removeEventListener("click",this.stopMultipleClicks)},Ajaxinate.prototype.removeScrollListener=function(){document.removeEventListener("scroll",this.checkIfPaginationInView),window.removeEventListener("resize",this.checkIfPaginationInView),window.removeEventListener("orientationchange",this.checkIfPaginationInView)},Ajaxinate.prototype.destroy=function(){return{click:this.removeClickListener,scroll:this.removeScrollListener}[this.settings.method](),this};
+</script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  var endlessScroll = new Ajaxinate({
+    method: 'scroll'
+  });
+});
+</script>
+
+
+{% schema %}
+{
+  "name": "Blog Pages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Blog Header"
+    },
+    {
+      "type":"image_picker",
+      "id":"header_image",
+      "label":"Header Background Image"
+    },
+    {
+      "type": "select",
+      "id": "header_layout",
+      "options": [
+        { "value": "left", "label": "Left"},
+        { "value": "center", "label": "Center"},
+        { "value": "right", "label": "Right"}
+      ],
+      "label": "Header Text Layout",
+      "default":"right"
+    },
+    {
+      "type": "font_picker",
+      "label": "Heading Font",
+      "id": "heading_font",
+      "default": "futura_n7"
+    },
+    {
+       "type": "color",
+       "id": "heading_color",
+       "label": "Heading color",
+       "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "heading_custom_font",
+      "default": "Gamine",
+      "label": "Heading Custom Font Name",
+      "info": "Leave blank to use font above."
+    },
+    {
+        "type": "range",
+        "id": "heading_font_size",
+        "min": 24,
+        "max": 72,
+        "step": 1,
+        "unit": "px",
+        "label": "Heading Font size",
+        "default": 42
+    },
+    {
+      "type": "font_picker",
+      "label": "Subheading Font",
+      "id": "subheading_font",
+      "default": "futura_n5"
+    },
+    {
+      "type": "text",
+      "id": "subheading_custom_font",
+      "label": "Subheading Custom Font Name",
+      "info": "Leave blank to use font above."
+    },
+    {
+        "type": "range",
+        "id": "subheading_font_size",
+        "min": 12,
+        "max": 18,
+        "step": 1,
+        "unit": "px",
+        "label": "Subheading Font size",
+        "default": 14
+    },
+    {
+     "type": "textarea",
+     "id": "subheading_text",
+     "default": "There's no one-tip-fits all for this menstruation game we're forced to play, so let's figure it out together.\nCurious if your flow is normal? Your cramps? Frustrated with the way your family member speaks shout menstruation and women's rights? (Just us?)\nWe're here to talk. This is the place to engage in the dialogue you've been longing for. Our team a blog-writers and the content they create is driven by you.",
+     "label": "Subheading Text"
+    },
+    {
+      "type": "header",
+      "content": "Article Title"
+    },
+    {
+      "type": "font_picker",
+      "label": "Font",
+      "id": "article_title_font",
+      "default": "futura_n5"
+    },
+    {
+      "type": "text",
+      "id": "article_title_custom_font",
+      "default": "Gamine",
+      "label": "Custom Font Name",
+      "info": "Leave blank to use font above."
+    },
+    {
+        "type": "range",
+        "id": "article_title_font_size",
+        "min": 12,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 24
+    },
+    {
+       "type": "color",
+       "id": "article_title_color",
+       "label": "Title color",
+       "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Article Excerpt"
+    },
+    {
+      "type": "font_picker",
+      "label": "Font",
+      "id": "article_excerpt_font",
+      "default": "futura_n4"
+    },
+    {
+      "type": "text",
+      "id": "article_excerpt_custom_font",
+      "label": "Custom Font Name",
+      "info": "Leave blank to use font above."
+    },
+    {
+        "type": "range",
+        "id": "article_excerpt_font_size",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 11
+    },
+    {
+      "type": "header",
+      "content": "Pagination"
+    },
+    {
+        "type": "range",
+        "id": "article_pagination_num",
+        "min": 2,
+        "max": 16,
+        "step": 2,
+        "label": "# of Articles per Page",
+        "default": 6
+    }
+
+  ]
+}
+{% endschema %}

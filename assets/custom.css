@@ -1,0 +1,65 @@
+/**
+	Custom CSS
+**/
+
+
+
+
+/**
+    ReCharge Customization
+**/
+
+/* Menu Dropdown */
+#recharge-novum #shopify-section-header{
+    position: relative;
+    z-index: 2;
+}
+#recharge-novum #MainContent{
+    position: relative;
+    z-index: 1;
+}
+
+/* Fonts */
+html body#recharge-novum #recharge-te *,
+html body#recharge-novum #recharge-te #rc_te-template-wrapper h2,
+html body#recharge-novum #recharge-te h2,
+html body#recharge-novum #recharge-te #rc_te-template-wrapper h3,
+html body#recharge-novum #recharge-te h3,
+html body#recharge-novum #recharge-te .rc_order_title{
+    font-family: "Avenir Next", sans-serif;
+}
+
+/* Colors */
+html body#recharge-novum #recharge-te{
+    background: transparent;
+}
+html body#recharge-novum #recharge-te ul li a,
+html body#recharge-novum #recharge-te a{
+    color: #fbe800;
+}
+html body#recharge-novum #recharge-te .bg-light{
+    background: #302ba3;
+}
+
+html body#recharge-novum #recharge-te #rc_te-template-wrapper h3,
+html body#recharge-novum #recharge-te h3,
+html body#recharge-novum #recharge-te #rc_te-template-wrapper h2,
+html body#recharge-novum #recharge-te h2,
+html body#recharge-novum #recharge-te .rc_order_title,
+html body#recharge-novum #recharge-te .color-light-green,
+html body#recharge-novum #recharge-te #rc_te-template-wrapper .color-light-green,
+html body#recharge-novum #recharge-te .edit_subscription_info--wrapper a{
+	color: #302BA3 !important;
+}
+html body#recharge-novum #recharge-te #rc_te-template-wrapper .rc_btn,
+html body#recharge-novum #recharge-te .rc_btn{
+	background-color: #302BA3;
+  color: #FDF3EB;
+}
+
+/* Buttons */
+html body#recharge-novum #recharge-te #rc_te-template-wrapper .rc_btn--secondary,
+html body#recharge-novum #recharge-te .rc_btn--secondary, 
+html body#recharge-novum #recharge-te #rc_te-template-wrapper .expired{
+    border-radius: 50px;
+}

@@ -1,0 +1,3212 @@
+{
+  "current": {
+    "color_body_bg": "#fdf3eb",
+    "color_body_text": "#302ba3",
+    "color_button": "#fbe800",
+    "color_button_text": "#302ba3",
+    "color_sale_price": "#000000",
+    "color_sale_tag": "#d1ce4c",
+    "color_sale_tag_text": "#302ba3",
+    "color_cart_dot": "#302ba3",
+    "color_cart_dot_text": "#302ba3",
+    "color_alt_bg": "#d1ce4c",
+    "color_alt_text": "#ffffff",
+    "color_announcement": "#fbe800",
+    "color_announcement_text": "#302ba3",
+    "color_newsletter": "#302ba3",
+    "color_newsletter_text": "#fbe800",
+    "color_drawer_background": "#d1ce4c",
+    "color_drawer_text": "#ffffff",
+    "color_image_text": "#302ba3",
+    "color_image_overlay": "#302ba3",
+    "color_image_overlay_opacity": 0,
+    "color_image_overlay_text_shadow": 0,
+    "color_small_image_bg": "#fdf3eb",
+    "color_large_image_bg": "#000000",
+    "type_header_font_family": "inconsolata_n4",
+    "type_header_capitalize": false,
+    "type_header_spacing": -25,
+    "type_header_base_size": 46,
+    "type_header_line_height": 1,
+    "type_base_font_family": "avenir_next_n4",
+    "type_product_capitalize": false,
+    "type_base_spacing": 25,
+    "type_base_size": 18,
+    "type_base_line_height": 1.6,
+    "button_type_style": "normal",
+    "button_style": "round",
+    "animate_images": false,
+    "logo_loader_image": "shopify:\/\/shop_images\/marlow_loading_graphic-50.png",
+    "desktop_loader_width": 370,
+    "mobile_loader_width": 180,
+    "product_hover_details": false,
+    "product_hover_image": true,
+    "product_image_scatter": false,
+    "product_grid_image_size": "natural",
+    "product_image_type": "slider",
+    "cart_type": "page",
+    "cart_icon": "cart",
+    "social_instagram_link": "https:\/\/www.instagram.com\/wearemarlow\/",
+    "social_facebook_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/marlowcorp",
+    "social_pinterest_link": "",
+    "favicon": "shopify:\/\/shop_images\/marlow_favicon-03.png",
+    "search_type": "product,article,page",
+    "checkout_logo_image": "shopify:\/\/shop_images\/marlow_bluelogo-16.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#d1ce4c",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#302ba3",
+    "checkout_button_color": "#fbe800",
+    "checkout_error_color": "#ff6d6d",
+    "animate_page_transition_style": "page-logo",
+    "checkout_banner_background_color": "#ffffff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "product_video_style": "muted",
+    "reviews_layout": "full",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_style": "bar",
+          "main_menu_alignment": "center",
+          "sticky_index": true,
+          "sticky_collection": false,
+          "header_search_enable": false,
+          "logo": "shopify:\/\/shop_images\/marlow_bluelogo-16.png",
+          "logo-inverted": "shopify:\/\/shop_images\/marlow_bluelogo-16.png",
+          "desktop_logo_width": 190,
+          "mobile_logo_width": 140,
+          "logo_hide_mobile": false,
+          "main_menu_link_list": "header-2",
+          "show_announcement": false,
+          "show_announcement_home_only": false,
+          "announcement_text": "🎉 FREE SHIPPING ON ALL SUBSCRIPTIONS! 🎉",
+          "announcement_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_newsletter": false,
+          "newsletter_title": "<h3>The Latest Drip💧<h2 style=\"font-size:18px\">Subscribe and receive 10% off your first order when you sign up for Marlow updates.<\/h2>\n<\/h3>",
+          "newsletter_richtext": "",
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false,
+          "show_social_icons": false,
+          "menu": "footer_2",
+          "show_payment_icons": false,
+          "show_copyright": true,
+          "copyright_text": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "per_row_desktop": 3,
+          "per_row_mobile": "1",
+          "description_bottom": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_image_size": "large",
+          "product_image_type": "slider",
+          "product_zoom_enable": true,
+          "enable_video_looping": true,
+          "product_video_style": "muted",
+          "enable_payment_button": false,
+          "product_shipping_callout": "",
+          "variant_type": "button",
+          "variant_labels_enable": true,
+          "sku_enable": false,
+          "inventory_enable": false,
+          "inventory_threshold": 10,
+          "inventory_transfers_enable": false,
+          "quantity_enable": true,
+          "surface_pickup_enable": false,
+          "social_enable": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_image": false,
+          "blog_show_tags": true,
+          "blog_show_date": false,
+          "blog_show_comments": false,
+          "blog_show_author": false,
+          "social_sharing_blog": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "post_limit": 9,
+          "blog_show_tag_filter": true,
+          "blog_show_rss": false,
+          "blog_show_tags": true,
+          "blog_show_date": false,
+          "blog_show_comments": false,
+          "blog_show_author": false,
+          "blog_show_excerpt": false,
+          "blog_image_size": "square"
+        }
+      },
+      "product-sections": {
+        "type": "product-sections",
+        "blocks": {
+          "45660f1d-61fc-4351-9089-25b7c53ce7e6": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_madewithtampon2-26.png",
+              "desktop_size": 0,
+              "image_mobile": "shopify:\/\/shop_images\/marlow_madewith_tampons2-29.png",
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "f2ab1502-ea40-48e7-ab7f-463393cb966a": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p><a href=\"\/pages\/building-marlow-1\" title=\"Our Standard\">Learn More <\/a><\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true,
+              "alt": false
+            }
+          },
+          "6144f383-0d6d-466f-868a-bc3b24a637e2": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/beigebanner-25.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "48f82d9f-d0d1-4b26-96eb-28a8b3e6f849": {
+            "type": "rich-text",
+            "settings": {
+              "title": "What people are saying:",
+              "text": "<p>tag us @wearemarlow<\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          }
+        },
+        "block_order": [
+          "45660f1d-61fc-4351-9089-25b7c53ce7e6",
+          "f2ab1502-ea40-48e7-ab7f-463393cb966a",
+          "6144f383-0d6d-466f-868a-bc3b24a637e2",
+          "48f82d9f-d0d1-4b26-96eb-28a8b3e6f849"
+        ],
+        "settings": {
+        }
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "blocks": {
+          "313bb416-0d70-43b2-ad54-86dc937d80d0": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": true,
+              "space_around": false,
+              "alt": false,
+              "code": "<div class=\"typeform-widget\" data-url=\"https:\/\/form.typeform.com\/to\/Q9YvKDIh?typeform-medium=embed-snippet\" style=\"width: 100%; height: 500px;\"><\/div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=\"typef_orm\", b=\"https:\/\/embed.typeform.com\/\"; if(!gi.call(d,id)) { js=ce.call(d,\"script\"); js.id=id; js.src=b+\"embed.js\"; q=gt.call(d,\"script\")[0]; q.parentNode.insertBefore(js,q) } })() <\/script>"
+            }
+          }
+        },
+        "block_order": [
+          "313bb416-0d70-43b2-ad54-86dc937d80d0"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": true
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.<\/p>",
+          "enable_newsletter": true,
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "title_enable": true,
+          "display_type": "all",
+          "sort": "alphabetical"
+        }
+      },
+      "1559098181700": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1559098181700-0": {
+            "type": "image",
+            "settings": {
+              "title": "<h1 style=\"color:#302BA3;\">\n The Marlow Experience<\/h1>\n<h2 style=\"font-size:19px ; color:#302BA3;\n\">Making tampons easy to use and easy to buy. Shipped straight to your door every three months, so you'll never run out again. <br>\nPause, modify or cancel at any time. <br> <\/h2>",
+              "title_size": 80,
+              "subheading": "",
+              "link": "shopify:\/\/products\/bundle-save",
+              "link_text": "SHOP NOW",
+              "color_accent": "#fbe800",
+              "text_align": "vertical-center horizontal-left",
+              "image": "shopify:\/\/shop_images\/Marlow_Experience_Marlow-03-02.png",
+              "image_mobile": "shopify:\/\/shop_images\/Marlow_Experience_Marlow-03-01.png",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1559098181700-0"
+        ],
+        "settings": {
+          "style": "minimal",
+          "desktop_size": 0,
+          "mobile_size": 20,
+          "autoplay": false,
+          "autoplay_speed": 7
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "product_recommendations_heading": "You may also like",
+          "per_row": "small"
+        }
+      },
+      "1559586187853": {
+        "type": "marquee",
+        "disabled": true,
+        "settings": {
+          "text": "Tampons and lubricant delivered straight to your door. ✸",
+          "link": "",
+          "text_size": 20,
+          "text_spacing": false,
+          "color_scheme": "button",
+          "direction": "left",
+          "speed": "slow"
+        }
+      },
+      "social": {
+        "type": "social",
+        "blocks": {
+          "e38a3fb6-20ec-41b0-9183-296fb4e723a5": {
+            "type": "post",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8142.jpg",
+              "link": "",
+              "product": "bundle-save",
+              "account": "<h2>Erin <br> ✸✸✸✸✸<br>\n<\/h2>",
+              "caption": "<h3> \"I was shocked at how easy it was as in the past sometimes I struggle if my flow is light.\"<\/h3>",
+              "likes": ""
+            }
+          },
+          "0779fa85-d646-4b4d-9e50-3c5532affe0c": {
+            "type": "post",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ariana.png",
+              "link": "",
+              "product": "bundle-save",
+              "account": "<h2>Ariana<br> ✸✸✸✸✸<br>\n<\/h2>",
+              "caption": "<h4> \"Tampon insertion is inconsistent usually (depending on how wet\/dry my vagina is at the time) this felt like what it feels like to insert a tampon on a “good” (wet) day.\"<\/h4>",
+              "likes": ""
+            }
+          },
+          "5d42faaa-7cb7-475f-a93e-53cebc4392cd": {
+            "type": "post",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8136.jpg",
+              "link": "",
+              "product": "bundle-save",
+              "account": "<h2>Emma<br> ✸✸✸✸✸<br>\n<\/h2>",
+              "caption": "<h4> \"I didn’t realize that putting a tampon in is usually slightly painful because with the lube it felt like nothing.\"<\/h4>",
+              "likes": ""
+            }
+          },
+          "ea857335-5da9-425a-b531-1064e4263d9a": {
+            "type": "post",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8139_583db02c-3015-40de-b749-44274923763c.jpg",
+              "link": "",
+              "product": "bundle-save",
+              "account": "<h2>Lauren<br> ✸✸✸✸✸<br>\n<\/h2>",
+              "caption": "<h5> \"I liked that it was far easier in the application. I was surprised at the difference it made as I never would have considered myself someone who would need the lubricant. After using this product I would easily make the switch to Marlow.\"<\/h5>",
+              "likes": ""
+            }
+          },
+          "dacfc08c-4c72-4493-8526-e1ebf8df39df": {
+            "type": "post",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FullSizeRender.jpg",
+              "link": "",
+              "product": "bundle-save",
+              "account": "<h2>Elora<br> ✸✸✸✸✸<br>\n<\/h2>",
+              "caption": "<h3> \"It made insertion very easy and painless.\"<\/h3>",
+              "likes": ""
+            }
+          }
+        },
+        "block_order": [
+          "e38a3fb6-20ec-41b0-9183-296fb4e723a5",
+          "0779fa85-d646-4b4d-9e50-3c5532affe0c",
+          "5d42faaa-7cb7-475f-a93e-53cebc4392cd",
+          "ea857335-5da9-425a-b531-1064e4263d9a",
+          "dacfc08c-4c72-4493-8526-e1ebf8df39df"
+        ],
+        "settings": {
+          "enable_home": false,
+          "enable_product": false,
+          "enable_collection": false,
+          "title": "What People are Saying:",
+          "description": "<p>tag us <a href=\"https:\/\/instagram.com\/youraccount\/\">@wearemarlow<\/a><\/p>"
+        }
+      },
+      "16148039049ff1dd56": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "16148039049ff1dd56-0": {
+            "type": "image",
+            "settings": {
+              "title": "<h1 style=\"font-size:38px; color:#302BA3\">Goodbye 👋 dry plastic stick, <br>hello lubricated comfort.<h2 style=\"font-size:15px;color:#302BA3; font-size:22px\">It's time for a smoother tampon experience.\n<\/h2>\n<\/h1>",
+              "title_size": 40,
+              "subheading": "",
+              "link": "shopify:\/\/collections\/all",
+              "link_text": "SHOP NOW",
+              "color_accent": "#fdf3eb",
+              "text_align": "vertical-center horizontal-right",
+              "image": "shopify:\/\/shop_images\/marlow_hero_left-01.png",
+              "image_mobile": "shopify:\/\/shop_images\/marlow_readjustedmobilehero-40.png",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "16148039049ff1dd56-0"
+        ],
+        "settings": {
+          "style": "minimal",
+          "desktop_size": 0,
+          "mobile_size": 20,
+          "autoplay": false,
+          "autoplay_speed": 7
+        }
+      },
+      "16148039706dc80f17": {
+        "type": "text-columns",
+        "disabled": true,
+        "blocks": {
+          "16148039706dc80f17-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/marlow_placeholder_imgs-06.png",
+              "image_width": 140,
+              "title": "<h2 style=\"font-size:23px\">100% Organic Cotton Tampons with a Plant Based Applicator<\/h2>",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "16148039706dc80f17-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/marlow_placeholder_imgs-07.png",
+              "image_width": 120,
+              "title": "<h2 style=\"font-size:22px\">pH Balanced Water-Based Lubricant<\/h2>",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "e46fe254-3797-4781-976e-9b775b62862d": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/marlow_placeholder_imgs-08.png",
+              "image_width": 150,
+              "title": "<h2 style=\"font-size:23px\">Free of Fragrance, Dyes, and Irritants<\/h2>",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16148039706dc80f17-0",
+          "16148039706dc80f17-1",
+          "e46fe254-3797-4781-976e-9b775b62862d"
+        ],
+        "settings": {
+          "title": "<h1><b>Our Standard<\/b><\/h1>",
+          "align_text": "center",
+          "alt": false
+        }
+      },
+      "page-ourstory-template": {
+        "type": "page-ourstory-template",
+        "blocks": {
+          "8720738b-2fb4-41b8-b534-c0cc060d577d": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Our_Story_1_-01_50831bf8-718b-4fb9-a56c-5fde63a497f8.png",
+              "image_width": 390,
+              "subtitle": "<h3> A Conversation Among Friends<\/h3>",
+              "title": "",
+              "text": "<p>It all started with a conversation among friends (that would be us) about how our current products were limiting.<\/p><p>Whether we were stressed about using a tampon to swim (the thought of shoving a dry cotton stick up there... <em>ouch<\/em>), to the overly feminine branding that didn’t resonate with us, to the fact that, time and time again, we ran out of product at the worst possible moment... let’s just say we all had some issues.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "right",
+              "alt": false
+            }
+          },
+          "31629057-f85f-4386-98e2-04500a382dec": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Continue_Convo-01_24482c40-b8c0-444e-b829-7551ec0eb345.png",
+              "image_width": 390,
+              "subtitle": "<h3>CONTINUING THE CONVERSATION<\/h3>",
+              "title": "",
+              "text": "<p>We realized that we had all ignored these problems for years, mostly because we were too uncomfortable to talk about them. Mix that in with a lack of education and a touch of shame and we found ourselves facing unnecessary limitations in our lives.<\/p><p><\/p><p>So, we decided to stir things up.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "left",
+              "alt": false
+            }
+          },
+          "e785ca11-d85d-4fa8-a4bf-5f97eb468662": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Making_Moves-01.png",
+              "image_width": 390,
+              "subtitle": "<h3> MAKING MOVES<\/h3>",
+              "title": "",
+              "text": "<p>At Marlow, we aren’t afraid to push the boundaries of what we’ve been socialized to “put up” with. <\/p><p>Marlow exists to transform the way you experience menstrual health, from the conversations you start, to the information you receive, to the products you use. <\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "right",
+              "alt": false
+            }
+          },
+          "06843808-7c14-4dc3-a5f9-aa3fdcbab4d6": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Who_is_Marlow_-01.png",
+              "image_width": 390,
+              "subtitle": "<h3>SO, WHO IS MARLOW?<\/h3>",
+              "title": "",
+              "text": "<p>We are all Marlow. We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing. <\/p><p><\/p><p>Are you in?<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "left",
+              "alt": false
+            }
+          },
+          "e945e297-a8a0-4951-91fb-948f9de9715b": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>It's time to spark some much needed conversation. <\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true,
+              "alt": false
+            }
+          },
+          "7226d606-d18d-4ebf-ba71-2097bb8794c5": {
+            "type": "marquee",
+            "settings": {
+              "text": "Meet the Original Marlows &nbsp;&nbsp; ✸",
+              "link": "",
+              "text_size": 26,
+              "text_spacing": false,
+              "color_scheme": "button",
+              "direction": "left",
+              "speed": "slow"
+            }
+          },
+          "32a404b0-9dd7-4a83-80aa-63f87c0add3a": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_green_background_sparkles-26.png",
+              "desktop_size": 0,
+              "image_mobile": "shopify:\/\/shop_images\/marlow_mobilesparkbanners-56.png",
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "1e3eba9e-a744-4d62-bf04-87eb87875b2c": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/09A9694.jpg",
+              "image_width": 700,
+              "subtitle": "",
+              "title": "The Marlow Team",
+              "text": "<p>We are a group of unconventional thinkers, ambitious dreamers, and outdoor lovers, working together to transform the way we all experience menstrual health.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "left",
+              "alt": true
+            }
+          },
+          "0ce4caf9-f18c-4b13-9d6b-c7f8f89d50f3": {
+            "type": "marquee",
+            "settings": {
+              "text": "Marlow Fun Facts &nbsp;&nbsp; ✸",
+              "link": "",
+              "text_size": 24,
+              "text_spacing": false,
+              "color_scheme": "text",
+              "direction": "right",
+              "speed": "normal"
+            }
+          },
+          "b5d4657a-5fc0-49af-a1b7-f75050a0f202": {
+            "type": "text-columns",
+            "settings": {
+              "title": "<h3>We asked our team a few questions:<\/h3>",
+              "align_text": "center",
+              "alt": true,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_teamffunfacts-03.png",
+              "image_width_1": 570,
+              "title_1": "",
+              "text_1": "",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_functfact5-04.png",
+              "image_width_2": 570,
+              "title_2": "",
+              "text_2": "",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_functfact5-05.png",
+              "image_width_3": 570,
+              "title_3": "",
+              "text_3": "",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "8d0efdc7-cfd0-4df9-9b5f-0179f4d5640e": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_mockupsforweb-09.png",
+              "desktop_size": 0,
+              "image_mobile": "shopify:\/\/shop_images\/marlow_mockupsforweb-10.png",
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "65cdf4d6-673c-4258-bec8-6fc84c714cfb": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_greenbiege_pattern-24.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "8720738b-2fb4-41b8-b534-c0cc060d577d",
+          "31629057-f85f-4386-98e2-04500a382dec",
+          "e785ca11-d85d-4fa8-a4bf-5f97eb468662",
+          "06843808-7c14-4dc3-a5f9-aa3fdcbab4d6",
+          "e945e297-a8a0-4951-91fb-948f9de9715b",
+          "7226d606-d18d-4ebf-ba71-2097bb8794c5",
+          "32a404b0-9dd7-4a83-80aa-63f87c0add3a",
+          "1e3eba9e-a744-4d62-bf04-87eb87875b2c",
+          "0ce4caf9-f18c-4b13-9d6b-c7f8f89d50f3",
+          "b5d4657a-5fc0-49af-a1b7-f75050a0f202",
+          "8d0efdc7-cfd0-4df9-9b5f-0179f4d5640e",
+          "65cdf4d6-673c-4258-bec8-6fc84c714cfb"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "afa9c253-85d6-4ee6-abd7-f183675444c4": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Shipping & Payment",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "548f848c-7130-40c4-afad-a1652066f771": {
+            "type": "question",
+            "settings": {
+              "title": "Where do you ship to?",
+              "text": "<p>Currently, we only ship to Canada. Sign up to our newsletter to be notified when we expand to new geographic locations.<\/p>"
+            }
+          },
+          "b738b004-be77-4d5a-97a0-fac5ddc2e14d": {
+            "type": "question",
+            "settings": {
+              "title": "Where do Marlow’s products ship from?",
+              "text": "<p>We currently ship all of our products from Canada.<\/p>"
+            }
+          },
+          "748ce9f1-a57a-46f5-9476-1de2ee92041b": {
+            "type": "question",
+            "disabled": true,
+            "settings": {
+              "title": "How long will it take to ship my product?*",
+              "text": "<p>TBD<\/p>"
+            }
+          },
+          "387ae723-c3e6-4781-aab0-f374cff59099": {
+            "type": "question",
+            "settings": {
+              "title": "How much does shipping cost?",
+              "text": "<p>If you have a subscription through Marlow, shipping is on us! Woo! However, if you are making a one-time purchase, shipping costs will apply. Shipping varies by location and can be seen during checkout.<\/p>"
+            }
+          },
+          "e5a9bd06-ebb1-4525-9bae-29c3b4bc9058": {
+            "type": "question",
+            "settings": {
+              "title": "Will shipping times be affected by Covid-19?",
+              "text": "<p>Our team is working hard to ship out your orders as fast as possible. All orders placed will be processed within 3 business days. We are currently shipping through Canada Post, which may experience delays due to Covid-19. If you have any concerns about shipping, send us an email at <a title=\"mailto:hello@wearemarlow.com\" href=\"mailto:hello@wearemarlow.com\">hello@wearemarlow.com<\/a>.<\/p>"
+            }
+          },
+          "b71643de-57ba-447c-a0b6-48da27731d84": {
+            "type": "question",
+            "settings": {
+              "title": "What forms of payment do you accept?",
+              "text": "<p>We currently accept Visa, Mastercard and American Express.<\/p>"
+            }
+          },
+          "75569eb7-a574-45d7-876b-d98cd1b07d47": {
+            "type": "question",
+            "settings": {
+              "title": "How do I update my credit card on file?",
+              "text": "<p>To update your credit card on file, first click on the profile icon in the top right corner of your screen to ensure you’re logged in. From here, select “Manage Account” on the right side of the screen. Select “Manage Subscriptions” and then “Change payment info.” You will receive an email to securely update your payment information.<\/p>"
+            }
+          },
+          "71d30cee-e6d6-4824-957f-e30379021017": {
+            "type": "question",
+            "settings": {
+              "title": "When will I be charged for my subscription?",
+              "text": "<p>You will be charged for your first subscription order when you checkout online. Each following order will be charged upon the reorder date. You can view your upcoming delivery schedule by going to your account and selecting \"Upcoming Orders.\"<\/p>"
+            }
+          },
+          "28be32e8-3a43-4d7d-89fc-a305eb938f18": {
+            "type": "question",
+            "settings": {
+              "title": "Where is my order?",
+              "text": "<p>Once your order has been processed and shipped, you will receive a tracking number to track your order via Canada Post. If you are unable to locate the tracking number, you can message one of our representatives by clicking the messaging icon at the bottom right corner of your screen.<\/p>"
+            }
+          },
+          "d2dc1f4f-1c50-4f21-a19e-e4fca3ca2c45": {
+            "type": "question",
+            "settings": {
+              "title": "What if my order arrived damaged or incorrectly?",
+              "text": "<p>If your product has been damaged or you received an incorrect order, we truly apologize! You can click on the message icon in the bottom right corner of your screen to contact one of our representatives and we will sort everything out for you!<\/p>"
+            }
+          },
+          "7a0c7ab5-62fd-47a9-946b-d7fc1b44e1e2": {
+            "type": "question",
+            "settings": {
+              "title": "I didn’t receive my order! What now?",
+              "text": "<p>If you didn’t receive your order, you can message one of our representatives by clicking the messaging icon at the bottom right corner of your screen and we'll help you out!<\/p>"
+            }
+          },
+          "a9ebf76e-91bd-45b5-9aa2-6b3f99ff197a": {
+            "type": "question",
+            "settings": {
+              "title": "Is my account secure?",
+              "text": "<p>At Marlow, we want you to be comfortable, always. That’s why we take your privacy very seriously and have designed our policy with you in mind. You can read more <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">here<\/a>.<\/p>"
+            }
+          },
+          "b7b11a83-6e36-4561-8cbd-5a7c90b51c16": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Subscription & Account Management",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "b0e1e19f-e84d-47ec-83fc-36ce0f443f80": {
+            "type": "question",
+            "settings": {
+              "title": "How does your subscription work?",
+              "text": "<p>We currently offer quarterly subscriptions, meaning you’ll receive product every 3 months. You can modify or cancel your subscription at any time by logging into your account and clicking on your profile. From here you’ll be able to edit your subscription in the following ways: update product variants, add a new product to your subscription, apply a discount, skip a shipment, gift a shipment to a friend, change the next order date, change your billing info, or cancel your subscription.<\/p>"
+            }
+          },
+          "623d8271-d939-4f9d-99e0-2dcb2e186440": {
+            "type": "question",
+            "settings": {
+              "title": "Can I place a one-time order?",
+              "text": "<p>Yes! You can either place a one-time order or subscribe to receive our tampons and lubricant.<\/p>"
+            }
+          },
+          "73423b6b-f9c7-4a3b-ad14-9bce40b4adad": {
+            "type": "question",
+            "settings": {
+              "title": "How do I log into my account?",
+              "text": "<p>In the top right corner of our website, select the profile icon to access your account. Once you input your email address and password, you will be logged in. <\/p>"
+            }
+          },
+          "a0abb6df-1502-49e3-b590-217ff368e50a": {
+            "type": "question",
+            "settings": {
+              "title": "How do I know my order was processed?",
+              "text": "<p>Once your order has been processed, you’ll receive an email from us. All orders are processed within 3 business days.<\/p>"
+            }
+          },
+          "050b1da0-960d-4fd4-81f3-f23db7ae2ed5": {
+            "type": "question",
+            "settings": {
+              "title": "How do I know my order was shipped?",
+              "text": "<p>Once your order has shipped, you’ll receive an email from us, which will also include a tracking number through Canada Post.<\/p>"
+            }
+          },
+          "aec744bd-b246-4155-b958-e6a0f658054f": {
+            "type": "question",
+            "settings": {
+              "title": "How do I log out?",
+              "text": "<p>To log out, select the profile icon at the top right corner of your screen. Then, select \"Manage Account\" and \"Log Out.\" You're all set!<\/p>"
+            }
+          },
+          "bbeacbb6-1308-41b3-97c8-1ecb9cbd81f6": {
+            "type": "question",
+            "settings": {
+              "title": "How do I update my shipping address?",
+              "text": "<p>In the top right corner of our website, click on the profile icon to access your account. From here, select “Manage Account” and then “Delivery Addresses.” You can directly update your shipping address here.<\/p>"
+            }
+          },
+          "d22f8345-8b11-41da-b87d-42b3cf479881": {
+            "type": "question",
+            "settings": {
+              "title": "I forgot to update my address before my order shipped. What do I do?",
+              "text": "<p>We’re here for you - send us a message and we’ll see what we can do! Simply start a chat by clicking the messaging icon at the bottom right of your screen, and let us know what you need.<\/p>"
+            }
+          },
+          "79ea961c-d099-46b5-9c38-2b8d7a1d2ad7": {
+            "type": "question",
+            "disabled": true,
+            "settings": {
+              "title": "How do I change my account email address?",
+              "text": "<p>In the top right corner of our website, click on the profile icon to access your account. From here, select “Manage Account” and then “Shipping Addresses.” Select your shipping address and update the email on file.<\/p>"
+            }
+          },
+          "19793fee-2d4c-4016-8cf3-76c60d741246": {
+            "type": "question",
+            "settings": {
+              "title": "How do I cancel my subscription?",
+              "text": "<p>In the top right corner of our website, select the profile icon to access your account. Then, select “Manage Account.” From here, click “Manage Subscriptions.\" At the bottom of the page, select “Cancel Subscription.”<\/p>"
+            }
+          },
+          "47230c03-5953-4937-b04b-3acaebc97dfc": {
+            "type": "question",
+            "settings": {
+              "title": "Will I be charged for cancelling my subscription?",
+              "text": "<p>No, you will not be charged for cancelling your subscription! You can pause, modify, or cancel your subscription at any time without penalty.<\/p>"
+            }
+          },
+          "809d4304-fc64-46fe-a595-d195e508a819": {
+            "type": "question",
+            "settings": {
+              "title": "How do I skip my next subscription order?",
+              "text": "<p>In the top right corner of our website, select the profile icon to access your account. Then, select “Manage Account.” There will be a button to skip your upcoming order.<\/p>"
+            }
+          },
+          "cc3f8c4a-2976-4d51-ae32-559edb7d11b5": {
+            "type": "question",
+            "settings": {
+              "title": "How do I pause my subscription order?",
+              "text": "<p>If you want to delay future subscription orders, you can update your upcoming order dates or skip your next order when you go to your profile. If you wish to take a longer break from your subscription, you need to cancel your subscription. (P.s. don’t worry, we’ll always welcome you back with open arms!)<\/p>"
+            }
+          },
+          "ca83c632-cc34-4c79-a694-edbf8be5c592": {
+            "type": "question",
+            "settings": {
+              "title": "I need my next few orders now - how do I get them shipped together?",
+              "text": "<p>If you want multiple subscription orders shipped together, just message our customer service representative, and they’ll help you out! Simply start a live chat by clicking on the message icon at the bottom right corner of your screen, or email us at <a href=\"mailto:hello@wearemarlow.com\" title=\"mailto:hello@wearemarlow.com\">hello@wearemarlow.com<\/a>.<\/p>"
+            }
+          },
+          "3067e56c-f217-4fd1-8e53-4ff043af3543": {
+            "type": "question",
+            "settings": {
+              "title": "How do I change my subscription renewal date?",
+              "text": "<p>If you need to update a future order date, it’s easy! In the top right corner of our website, select the profile icon to access your account. Then, select “Manage Account.” From here, click “Manage Subscription” and then update the date next to \"Next Shipment.” You’re set!<\/p><p><\/p>"
+            }
+          },
+          "de5ea1a5-6fb1-4e96-9c30-316f4f2ce259": {
+            "type": "question",
+            "settings": {
+              "title": "How do I add a discount to my existing subscription?",
+              "text": "<p>In the top right corner of our website, select the profile icon to access your account. Then, select \"Manager Account\" and then “Manage Subscription.” You'll see a section where you can apply a discount code.<\/p>"
+            }
+          },
+          "581b4987-6619-4163-ae33-ed63650a1895": {
+            "type": "question",
+            "settings": {
+              "title": "Do you offer returns?",
+              "text": "<p>We do not offer returns. However, if you have any concerns with your product, reach out and we’ll see what we can do for you! Simply start a live chat or email us at <a href=\"mailto:hello@wearemarlow.com\" title=\"mailto:hello@wearemarlow.com\">hello@wearemarlow.com<\/a>. To access our live chat, click on the messaging icon at the bottom right corner of your screen.<\/p>"
+            }
+          },
+          "c2f9ab17-216d-47b5-806a-f47ccc34a4bb": {
+            "type": "question",
+            "settings": {
+              "title": "Can I make changes to the contents of my subscription?",
+              "text": "<p>Yes you can! In the top right corner of our website, select the profile icon to access your account. Here, you can add a new product to your shipment, or you can scroll down to swap out a different variant of what you're already ordering.<\/p>"
+            }
+          },
+          "f24c9a34-9bfb-4c71-add1-8d81c7c6532c": {
+            "type": "question",
+            "settings": {
+              "title": "Help, I forgot to cancel or skip before my subscription renewed!",
+              "text": "<p>Although we can’t alter orders once they’ve been processed, start a live chat or shoot us an email at <a href=\"mailto:hello@wearemarlow.com\" title=\"mailto:hello@wearemarlow.com\">hello@wearemarlow.com<\/a>, and we’ll try our best to help you out!<\/p>"
+            }
+          },
+          "page-faq-template-0": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Products",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "7c085c1e-4444-4124-ab46-f7881c338cda": {
+            "type": "question",
+            "settings": {
+              "title": "Can I use your lubricant and tampons together?",
+              "text": "<p>Yes, you can use our lubricant and tampons together! However, always ensure that you’re following the instructions on the box when using our tampons and lubricant.<\/p>"
+            }
+          },
+          "da21cb7f-3072-4b87-87ec-01b99386a6e2": {
+            "type": "question",
+            "settings": {
+              "title": "Should I use lubricant with my tampon?",
+              "text": "<p>If you want a smoother tampon insertion experience, then heck yeah! After all, who likes a dry slip and slide ;). Ok but really, try it out. If you want to make the process of using a tampon more comfortable, we made this just for you. <\/p>"
+            }
+          },
+          "88a88dd9-3c85-42e4-8556-7e09062904a0": {
+            "type": "question",
+            "settings": {
+              "title": "What are the ingredients in Marlow tampons?",
+              "text": "<p>We’re excited that you asked! We’re proud to say that our tampons are 100% organic, GOTS certified cotton. The string is also 100% organic GOTS certified cotton with a water-repellent wax coating. Our applicators are made of a plant-based plastic material. Each tampon is sealed in a compostable wrapper. And, to top it all off, we’ll ship it to you in a compostable mailer! Read more about our product decisions <a href=\"\/pages\/building-marlow-1\" title=\"Building Marlow\">here<\/a>.<\/p>"
+            }
+          },
+          "7c66ba85-df65-4c95-ab47-e2920b73d8ee": {
+            "type": "question",
+            "settings": {
+              "title": "What are the ingredients in the Marlow lubricant?",
+              "text": "<p>Here’s everything we put in our lubricant: Water, aloe barbadensis leaf extract*, sorbitol, hydroxyethyl cellulose, allantoin, lactic acid, tocopherol, potassium sorbate, stevia rebaudiana extract, paeonia albiflora root extract*, passiflora incarnata flower extract*, hyaluronic acid. (*Organic ingredients). Our lubricant is water-based, pH balanced, and free of any harsh ingredients.<br\/><\/p>"
+            }
+          },
+          "6bcae41f-ca3d-49ba-8c07-60457b00670f": {
+            "type": "question",
+            "settings": {
+              "title": "Why did you choose to sell organic tampons?",
+              "text": "<p>Check out this <a href=\"\/pages\/building-marlow-1\" title=\"Our Standard\">page<\/a> to understand why we chose to sell organic cotton tampons, and what this means for you and for the environment.<\/p>"
+            }
+          },
+          "f6e65f9f-59cd-451c-bdc8-6e5b0cb888d0": {
+            "type": "question",
+            "settings": {
+              "title": "How many Marlow tampons are in one box?",
+              "text": "<p>Each box contains 18 compact applicator tampons.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How do I use a compact applicator tampon?",
+              "text": "<p>Always wash your hands thoroughly before inserting a tampon. It also helps to choose a position for comfortable insertion. This may be standing with one foot placed on a toilet seat, or sitting on the toilet with your knees apart.<\/p><p>1) Remove the tampon from its individual protective wrapping. Pull the inner tube out until it comes to a stop at the bottom of the outer tube. Make sure the removal cord is hanging down from the inner tube. Gently tug the cord once to ensure that it is securely attached and not damaged. <\/p><p><\/p><p>2) Use your thumb and middle finger to hold the applicator on the grooved rings. Place the tip of the applicator into your vaginal opening and gently push the applicator into the vagina.<\/p><p><\/p><p>3) Keep hold of the applicator using your thumb and middle finger and with your index finger gently push the smaller tube all the way into the bigger tube. Once the rings or both tubes come close to one another, the tampon has been inserted.<\/p><p><\/p><p>4) Gently remove the applicator. Once the tampon has been inserted, the removal cord should be protruding from the vaginal opening.<\/p>"
+            }
+          },
+          "4ce322de-0eb2-4657-b178-295a4af844a5": {
+            "type": "question",
+            "settings": {
+              "title": "What absorbency levels of tampon does Marlow offer?",
+              "text": "<p>We offer light, regular, and super tampons to match your flow!<span style=\"text-decoration:underline\"> <\/span><\/p>"
+            }
+          },
+          "be8827aa-f4cc-4a8e-87b5-72fec8014063": {
+            "type": "question",
+            "settings": {
+              "title": "What absorbency of tampon should I use?",
+              "text": "<p>Light tampons are meant for a light flow, regular tampons are meant for a regular flow, and super tampons are meant for a heavy flow. <\/p><p>Select the absorbency rating that suits your menstrual flow and always choose the lowest absorbency to lower your risk of developing TSS. If you need to change your tampon more often than every 4 to 8 hours, try a tampon with a higher absorbency rating. Regardless of the tampon size you choose, you should change your tampon every 4 to 8 hours. Never use higher absorbency tampons to extend the time a single tampon may be used. Never exceed 8 hours of use with a single tampon and do not use overnight. Use different appropriate tampon absorbencies throughout your menstrual cycle to ensure optimal safety. <\/p>"
+            }
+          },
+          "d352398c-55e3-4057-b7b1-1ba41a95775c": {
+            "type": "question",
+            "settings": {
+              "title": "How do I properly dispose of Marlow tampons?",
+              "text": "<p>Here’s how to dispose of each component you receive:<br\/>The mailer your product was shipped in → compost! (Even our shipping labels are compostable).<br\/>The box your tampons came in → recycle!<br\/>The tampon wrapper → compost!<br\/>The tampon applicator and tampon → your bin (and not the toilet)!<\/p>"
+            }
+          },
+          "13064489-b933-4b6d-a60c-31ce94ff492a": {
+            "type": "question",
+            "settings": {
+              "title": "Can I flush Marlow tampons?",
+              "text": "<p>Please do not flush any tampons! Always throw tampons in the bin.<\/p>"
+            }
+          },
+          "a975489c-0666-4a86-bfac-aadab5522560": {
+            "type": "question",
+            "settings": {
+              "title": "How often should I change my tampon?",
+              "text": "<p>Regardless of the tampon size you choose, you should change your tampon every 4 to 8 hours. Never use higher absorbency tampons to extend the time a single tampon may be used. Never exceed 8 hours of use with a single tampon and do not use overnight.<\/p>"
+            }
+          },
+          "bd0d42e5-4be2-48ee-ba3a-5dcbfae34af1": {
+            "type": "question",
+            "settings": {
+              "title": "How do I use Marlow’s lubricant?",
+              "text": "<p>To use Marlow’s lubricant with tampons, dip a clean applicator tampon into the lubricant container and then remove the tampon from the container. Do not reinsert the same tampon into the container more than once. For penile and\/or vaginal application, apply a desired amount of lubricant to your intimate areas. Reapply as needed. <\/p>"
+            }
+          },
+          "d63838ee-330b-4523-aaa5-a845c7b52b5c": {
+            "type": "question",
+            "settings": {
+              "title": "Does Marlow's personal lubricant protect against STIs and pregnancy?",
+              "text": "<p>No, our personal lubricant does not protect against STIs and pregnancy as it does not contain spermicide.<\/p>"
+            }
+          },
+          "db766740-1c2c-4a7e-9cd2-c728c3113d3a": {
+            "type": "question",
+            "settings": {
+              "title": "Is Marlow's lubricant safe to use with condoms?",
+              "text": "<p>Marlow’s lubricant is compatible with natural rubber latex and polyisoprene condoms. Our lubricant is not compatible and should not be used with polyurethane condoms.<\/p>"
+            }
+          },
+          "7963171f-4f1c-48fc-9812-f9123108653b": {
+            "type": "question",
+            "settings": {
+              "title": "How should I store my product?",
+              "text": "<p>Your lubricant should be stored at room temperature at all times. Your tampons should not be stored in temperatures above 25 degrees celsius or in high humidity.<\/p>"
+            }
+          },
+          "0ee387aa-8b5a-419e-b664-3dfc6afc5448": {
+            "type": "question",
+            "settings": {
+              "title": "Which steps have you taken to prioritize sustainability?",
+              "text": "<p>For many, tampons are a necessity. That’s why we’re taking steps to minimize the environmental impact of our products as much as we can. We don’t take this lightly; we’re constantly investing in research and development to develop a more sustainable product. To learn more about the choices we have already made to prioritize sustainability, keep reading <a title=\"Building Marlow\" href=\"\/pages\/building-marlow-1\">here<\/a>. We want our products to be as comfortable for Mother Earth as they are for you. <\/p>"
+            }
+          },
+          "3eedae7e-3680-4597-9cb6-b7fd917fdae7": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Referral program",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "898b7b65-d950-4b21-b93a-9b73e1e5ee66": {
+            "type": "question",
+            "settings": {
+              "title": "Does Marlow have a referral program?",
+              "text": "<p>We definitely do! Just click on the Rewards button in the bottom left corner of your screen to get started. With our Give $5, Get $5 program, you can refer a friend so that they get $5 off their first purchase, and you’ll get $5 off your next one. <\/p>"
+            }
+          },
+          "8b55ae31-2940-4093-8cf7-9bf0a88e6565": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Other",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "ecaf7422-6f14-4a37-ba5b-66e76fe9df05": {
+            "type": "question",
+            "settings": {
+              "title": "Why Marlow?",
+              "text": "<p>You, me, and all other menstruators are Marlow. We’re taking the uncomfortable - conversations and products surrounding menstrual and sexual health - and making them comfortable. When you join Marlow, you become a part of a larger community that is growing, learning, and breaking down barriers together. Learn more about the Original Marlows <a href=\"\/pages\/our-story-1\" title=\"Our Story\">here<\/a>.<br\/><\/p>"
+            }
+          },
+          "b1cb3321-dcad-4aea-9a2f-d29cd33bca09": {
+            "type": "question",
+            "settings": {
+              "title": "I’m a store or business interested in carrying your product, who do I email?",
+              "text": "<p>If you’re interested in carrying our product in your store, please email us at <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\">info@wearemarlow.com<\/a>.<\/p>"
+            }
+          },
+          "2a9a10de-48fa-4d02-8e6d-572cfcd27ea1": {
+            "type": "question",
+            "settings": {
+              "title": "I’m a brand or individual interested in a partnership, who do I email?",
+              "text": "<p>If you’re interested in partnering with Marlow, please email us at <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\">info@wearemarlow.com<\/a>.<\/p>"
+            }
+          },
+          "8aa8dea1-5057-4792-b99b-db6b0312fe62": {
+            "type": "question",
+            "settings": {
+              "title": "Who do can I contact for Press Inquiries?",
+              "text": "<p>Please email us at <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\">info@wearemarlow.com<\/a>.<\/p>"
+            }
+          },
+          "77fcdf4c-b6f1-402a-abc9-26a7f124367d": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Still haven't found what your looking for?",
+              "text": "<p>drop us a line <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\">info@wearemarlow.com<\/a><\/p>",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "afa9c253-85d6-4ee6-abd7-f183675444c4",
+          "548f848c-7130-40c4-afad-a1652066f771",
+          "b738b004-be77-4d5a-97a0-fac5ddc2e14d",
+          "748ce9f1-a57a-46f5-9476-1de2ee92041b",
+          "387ae723-c3e6-4781-aab0-f374cff59099",
+          "e5a9bd06-ebb1-4525-9bae-29c3b4bc9058",
+          "b71643de-57ba-447c-a0b6-48da27731d84",
+          "75569eb7-a574-45d7-876b-d98cd1b07d47",
+          "71d30cee-e6d6-4824-957f-e30379021017",
+          "28be32e8-3a43-4d7d-89fc-a305eb938f18",
+          "d2dc1f4f-1c50-4f21-a19e-e4fca3ca2c45",
+          "7a0c7ab5-62fd-47a9-946b-d7fc1b44e1e2",
+          "a9ebf76e-91bd-45b5-9aa2-6b3f99ff197a",
+          "b7b11a83-6e36-4561-8cbd-5a7c90b51c16",
+          "b0e1e19f-e84d-47ec-83fc-36ce0f443f80",
+          "623d8271-d939-4f9d-99e0-2dcb2e186440",
+          "73423b6b-f9c7-4a3b-ad14-9bce40b4adad",
+          "a0abb6df-1502-49e3-b590-217ff368e50a",
+          "050b1da0-960d-4fd4-81f3-f23db7ae2ed5",
+          "aec744bd-b246-4155-b958-e6a0f658054f",
+          "bbeacbb6-1308-41b3-97c8-1ecb9cbd81f6",
+          "d22f8345-8b11-41da-b87d-42b3cf479881",
+          "79ea961c-d099-46b5-9c38-2b8d7a1d2ad7",
+          "19793fee-2d4c-4016-8cf3-76c60d741246",
+          "47230c03-5953-4937-b04b-3acaebc97dfc",
+          "809d4304-fc64-46fe-a595-d195e508a819",
+          "cc3f8c4a-2976-4d51-ae32-559edb7d11b5",
+          "ca83c632-cc34-4c79-a694-edbf8be5c592",
+          "3067e56c-f217-4fd1-8e53-4ff043af3543",
+          "de5ea1a5-6fb1-4e96-9c30-316f4f2ce259",
+          "581b4987-6619-4163-ae33-ed63650a1895",
+          "c2f9ab17-216d-47b5-806a-f47ccc34a4bb",
+          "f24c9a34-9bfb-4c71-add1-8d81c7c6532c",
+          "page-faq-template-0",
+          "7c085c1e-4444-4124-ab46-f7881c338cda",
+          "da21cb7f-3072-4b87-87ec-01b99386a6e2",
+          "88a88dd9-3c85-42e4-8556-7e09062904a0",
+          "7c66ba85-df65-4c95-ab47-e2920b73d8ee",
+          "6bcae41f-ca3d-49ba-8c07-60457b00670f",
+          "f6e65f9f-59cd-451c-bdc8-6e5b0cb888d0",
+          "page-faq-template-2",
+          "4ce322de-0eb2-4657-b178-295a4af844a5",
+          "be8827aa-f4cc-4a8e-87b5-72fec8014063",
+          "d352398c-55e3-4057-b7b1-1ba41a95775c",
+          "13064489-b933-4b6d-a60c-31ce94ff492a",
+          "a975489c-0666-4a86-bfac-aadab5522560",
+          "bd0d42e5-4be2-48ee-ba3a-5dcbfae34af1",
+          "d63838ee-330b-4523-aaa5-a845c7b52b5c",
+          "db766740-1c2c-4a7e-9cd2-c728c3113d3a",
+          "7963171f-4f1c-48fc-9812-f9123108653b",
+          "0ee387aa-8b5a-419e-b664-3dfc6afc5448",
+          "3eedae7e-3680-4597-9cb6-b7fd917fdae7",
+          "898b7b65-d950-4b21-b93a-9b73e1e5ee66",
+          "8b55ae31-2940-4093-8cf7-9bf0a88e6565",
+          "ecaf7422-6f14-4a37-ba5b-66e76fe9df05",
+          "b1cb3321-dcad-4aea-9a2f-d29cd33bca09",
+          "2a9a10de-48fa-4d02-8e6d-572cfcd27ea1",
+          "8aa8dea1-5057-4792-b99b-db6b0312fe62",
+          "77fcdf4c-b6f1-402a-abc9-26a7f124367d"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "page-buildingmarlow-template": {
+        "type": "page-buildingmarlow-template",
+        "blocks": {
+          "d595a101-9192-470f-be7b-44e847b40096": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": true,
+              "space_around": false,
+              "alt": true,
+              "code": "<div class=\"klaviyo-form-R6TVKG\"><\/div>"
+            }
+          },
+          "9b1a923c-3a64-4c00-b03c-cb338cf9649d": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "text": "<p>When we asked our friends about the menstrual products they used, we noticed a common theme: we were all on auto-pilot, rarely able to recall the brands we used or why. (Sound familiar?)<br\/><\/p><p>Considering the fact that the average person spends over six years of their life menstruating, we decided that we deserve better. You deserve to have a say in the products you use.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "44ddce34-817e-4474-9328-16a8ba1c2f39": {
+            "type": "image-hero",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/86_percent_web.png",
+              "desktop_size": 0,
+              "image_mobile": "shopify:\/\/shop_images\/86_percent_mobile.png",
+              "mobile_size": 10,
+              "focal_point": "center center"
+            }
+          },
+          "78959746-004a-4c28-afeb-d607c76436bc": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "text": "<p>Our first product was inspired by the community of menstruators around us, and each future product we develop will be thoughtfully designed with you in mind.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "7f001197-6be4-48cb-8f5e-ba0f1475c713": {
+            "type": "text-and-image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/09A4639.jpg",
+              "image_width": 480,
+              "subtitle": "<h3>Follow us on IG to join <br> the conversation<\/h3>",
+              "title": "",
+              "text": "",
+              "button_label": "@wearemarlow",
+              "button_link": "https:\/\/www.instagram.com\/wearemarlow\/",
+              "button_style": "primary",
+              "layout": "left",
+              "alt": false
+            }
+          },
+          "452436ba-f7cb-4105-bc98-493ce648cb28": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Sustainability",
+              "text": "<p>We’ve made changes to ensure that our products are more sustainable than the current standard, and we’ll continue to improve them over time. As Marlow grows, we are reinvesting into research and development to continuously minimize the environmental impact of our products - we’re designing products with you and our planet in mind.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "0324bb3f-0c9d-496a-a6fa-3b7fc1bcfce0": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Our Tampons",
+              "text": "<p>Here’s the low-down: most drugstore tampons are made from rayon or viscose and are bleached with chlorine. At Marlow, our tampons are made from 100% organic cotton, without the use of chlorine bleaching.<\/p><p><strong>What this means for you: <\/strong><\/p><p>There are no dyes, fragrances, or chemical additives, as these <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC4857673\/\">can irritate the skin<\/a>, and no synthetic fibres, as these <a href=\"https:\/\/www.hindawi.com\/journals\/idog\/1994\/342672\/\">can increase the risk of contracting Toxic Shock Syndrome<\/a>. <\/p><p>With Marlow, you know exactly what you’re getting - organic cotton, and nothing else.<\/p><p><strong>What this means for the environment:<\/strong><\/p><p>For many, tampons are a necessity. That’s why we’re taking steps to minimize the environmental impact of our products.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "feea7b92-bb1a-4ed4-8560-987495307bea": {
+            "type": "text-columns",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_buldingicons-10.png",
+              "image_width_1": 160,
+              "title_1": "<h5>\n<b>GOTS Certified Organic Cotton <\/b>  <br><br>You’re choosing a product that is manufactured without the use of hazardous chemicals, meaning  the farm, factory workers and you are protected.<\/h5>",
+              "text_1": "",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_buildinicons1-18.png",
+              "image_width_2": 160,
+              "title_2": "<h5>\n<b>Promotes Cleaner Air & Waterways <\/b><br><br> These chemicals will not enter air and waterways, which can negatively impact the environment.<\/h5>",
+              "text_2": "",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_buldingicons-11.png",
+              "image_width_3": 160,
+              "title_3": "<h5>\n<b>Produced in a Closed Loop  <\/b><br><br> Organic cotton, unlike rayon, is produced in a closed loop and grown with rain water, resulting in a much more sustainable crop.<\/h5>",
+              "text_3": "",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "459b2018-0db5-462b-b569-2912770fff03": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Our Applicators",
+              "text": "<p>Our tampon applicators are a sugar-cane based plastic, allowing us to rely on renewable resources compared to the traditional petroleum-based plastic applicator.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "79b279e4-9946-4f21-b88c-ac2e652705ea": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Our Packaging",
+              "text": "<p>When it comes to our packaging - our tampon wrappers, mailers, and shipping labels are compostable and all box packaging is recyclable!<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "62b81f00-b568-4401-bf7b-827895bce6d1": {
+            "type": "image-hero",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/beigebanner-25_f1ce7922-fa6d-419a-a84e-bc2b7123c5df.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "f6e3f48b-590e-4529-9a81-9d8a1591a80b": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Our Lubricant",
+              "text": "<p>Our lubricant is water-based, which is best for those who have sensitive skin or are prone to vaginal irritation, and it can be used safely with our tampons and with condoms*! Our aloe-based formula is pH-balanced, free of any harsh ingredients, and designed to provide moisture and reduce vaginal dryness.<\/p><p><br\/>*Safe to use with natural rubber latex and polyisoprene condoms.<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "479ac6a7-dbd1-41b2-86d1-beda374f1467": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Check out our ingredients here:",
+              "text": "<p>water, aloe barbadensis leaf extract*, sorbitol, hydroxyethyl cellulose, allantoin, lactic acid, tocopherol, potassium sorbate, stevia rebaudiana extract, paeonia albiflora root extract*, passiflora incarnata flower extract*, hyaluronic acid. (* organic ingredients)<\/p>",
+              "align_text": "left",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": true
+            }
+          },
+          "8b50dd3e-cc56-440d-8fb3-027a86881ce3": {
+            "type": "image-hero",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_bannerssparklegreen-35.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "8850d36e-304e-4b81-8b73-7eeca775e5ce": {
+            "type": "text-columns",
+            "disabled": true,
+            "settings": {
+              "title": "<h3>Want to know what we<b> DIDN’T <\/b>include in our ingredient list and why? <br>Check out the details below:<\/h3>",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_buldingicons-16.png",
+              "image_width_1": 100,
+              "title_1": "<h5>\n<b>Glycerin<\/b><br><br> this can cause infections and feed <br>existing ones<\/h5>",
+              "text_1": "",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_buldingicons-14.png",
+              "image_width_2": 100,
+              "title_2": "<h5>\n<b>Spermicidal Additives <\/b><br><br> these can irritate the vagina<\/h5>",
+              "text_2": "",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_citric_acid-15.png",
+              "image_width_3": 100,
+              "title_3": "<h5>\n<b>Citric Acid <\/b><br><br>this can be extremely irritating to<br> vaginal tissue<\/h5>",
+              "text_3": "",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "ecda0c11-84c1-49cd-8939-fca23390853b": {
+            "type": "text-columns",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_buldingicons-13.png",
+              "image_width_1": 100,
+              "title_1": "<h5>\n<b>Chlorhexidine<\/b><br><br>this can be irritating, causing sensations of itching and burning<\/h5>",
+              "text_1": "",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_buldingicons-17.png",
+              "image_width_2": 100,
+              "title_2": "<h5>\n<b>Petroleum + Petroleum Derivatives<\/b><br><br>these leave a coating on the skin which can trap bacteria<\/h5>",
+              "text_2": "",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_placeholder_imgs-08.png",
+              "image_width_3": 100,
+              "title_3": "<h5>\n<b>Fragrance<\/b><br><br>this can be a major irritant and allergen.<\/h5>",
+              "text_3": "",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "d9e27b74-9006-442a-8630-bcc0d06667d5": {
+            "type": "text-columns",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_buldingicons-12.png",
+              "image_width_1": 100,
+              "title_1": "<h5>\n<b>Glycerols<\/b><br><br>these are sometimes used to provide the <br>“warming” sensations present in some lubes, but they <br>can cause damage and dehydration to vaginal and anal tissue<\/h5>",
+              "text_1": "",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": false,
+              "image_width_2": 650,
+              "title_2": "",
+              "text_2": "",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": false,
+              "image_width_3": 650,
+              "title_3": "",
+              "text_3": "",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "d71a0f51-0cd7-4800-8d25-50a01351bd5c": {
+            "type": "rich-text",
+            "disabled": true,
+            "settings": {
+              "title": "Have any other questions about our products? Want to suggest what we do next?",
+              "text": "<p>Send us an email at <br\/><a href=\"mailto:hello@wearemarlow.com \" title=\"mailto:hello@wearemarlow.com \"> hello@wearemarlow.com<\/a>. <\/p><p>We’re always here to chat.<\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          }
+        },
+        "block_order": [
+          "d595a101-9192-470f-be7b-44e847b40096",
+          "9b1a923c-3a64-4c00-b03c-cb338cf9649d",
+          "44ddce34-817e-4474-9328-16a8ba1c2f39",
+          "78959746-004a-4c28-afeb-d607c76436bc",
+          "7f001197-6be4-48cb-8f5e-ba0f1475c713",
+          "452436ba-f7cb-4105-bc98-493ce648cb28",
+          "0324bb3f-0c9d-496a-a6fa-3b7fc1bcfce0",
+          "feea7b92-bb1a-4ed4-8560-987495307bea",
+          "459b2018-0db5-462b-b569-2912770fff03",
+          "79b279e4-9946-4f21-b88c-ac2e652705ea",
+          "62b81f00-b568-4401-bf7b-827895bce6d1",
+          "f6e3f48b-590e-4529-9a81-9d8a1591a80b",
+          "479ac6a7-dbd1-41b2-86d1-beda374f1467",
+          "8b50dd3e-cc56-440d-8fb3-027a86881ce3",
+          "8850d36e-304e-4b81-8b73-7eeca775e5ce",
+          "ecda0c11-84c1-49cd-8939-fca23390853b",
+          "d9e27b74-9006-442a-8630-bcc0d06667d5",
+          "d71a0f51-0cd7-4800-8d25-50a01351bd5c"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "desktop_logo_width": 200,
+          "mobile_logo_width": 140
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "title": "Be the first to know",
+          "show_password_message": false,
+          "text": "",
+          "newsletter_enable": true,
+          "newsletter_placeholder": "Enter your email",
+          "newsletter_button_text": "Submit",
+          "show_share_buttons": true,
+          "show_image": true
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "collection_image_enable": true,
+          "description_enable": true
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "filter_type": "groups",
+          "tags_combine": false,
+          "collection_sort_enable": false
+        }
+      },
+      "product-lubricant-sections": {
+        "type": "product-lubricant-sections",
+        "blocks": {
+          "ece9e877-9f16-426b-8c71-9dea8bb3c2a6": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_lubricantdesktop-27.png",
+              "desktop_size": 0,
+              "image_mobile": "shopify:\/\/shop_images\/marlow_lubricantmadewithout_mobile-30.png",
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "aa021a00-7a61-455b-8b0d-7950bcbc1155": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p><a href=\"\/pages\/building-marlow-1\" title=\"Our Standard\">Learn more <\/a><\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true,
+              "alt": false
+            }
+          },
+          "0e560cb0-c7be-4bb2-a0d6-6343b48709bf": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/beigebanner-25.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "ece9e877-9f16-426b-8c71-9dea8bb3c2a6",
+          "aa021a00-7a61-455b-8b0d-7950bcbc1155",
+          "0e560cb0-c7be-4bb2-a0d6-6343b48709bf"
+        ],
+        "settings": {
+        }
+      },
+      "product-tampons-sections": {
+        "type": "product-tampons-sections",
+        "settings": {
+        }
+      },
+      "page-ambassadorprogram-template": {
+        "type": "page-ambassadorprogram-template",
+        "blocks": {
+          "82ee0b2b-3241-4aac-b25b-d5d231bb8ae6": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "Hi,we're Marlow",
+              "text": "<p>We’re taking the uncomfortable - conversations and products surrounding menstrual and sexual health - and making them comfortable.<\/p><p>Want to join the conversation?<\/p>",
+              "button_label": "",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2021-03-08_at_4.26.38_PM.png",
+              "desktop_size": -10,
+              "image_alignment": "center center",
+              "color_border": "#f4f4f4",
+              "layout": "left"
+            }
+          },
+          "5259ad16-d963-4ecf-83c5-9aee808b09d2": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>You, me and all other menstruators are Marlow.<\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true,
+              "alt": false
+            }
+          },
+          "98f4e06a-b1aa-4000-a363-a5d13cb7d581": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2021-03-22_at_12.38.03_PM.png",
+              "image_width": 580,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Marlow’s ambassadors are a community of university students that are passionate about advocacy. <\/p><p>They start uncomfortable conversations surrounding menstrual &amp; sexual health to help make them comfortable, finally. No more stigmas, no more shame, just loud and proud conversations. <br\/><\/p><p>If you’re as frustrated as us we are about the lack of information out there, come join the community. It’s time to raise the bar and welcome the beginning of a new period.<\/p>",
+              "button_label": "",
+              "button_style": "primary",
+              "layout": "right",
+              "alt": false
+            }
+          },
+          "6f8a71ba-164c-4149-b4ea-e8735e81735b": {
+            "type": "rich-text",
+            "settings": {
+              "title": "The Program",
+              "text": "<p>We are looking for university students interested in joining the team as part of Marlow’s campus ambassador program. <\/p><p><strong>Our mission is two-fold:<\/strong><\/p><p>50% of the global population menstruates at some point in their life and yet today&#x27;s the tampon has barely changed in the last 89 years. What’s up with that? After speaking to hundreds of humans, over 60% said that they didn&#x27;t learn enough about their bodies or menstrual health growing up.<\/p><p><em>Que Marlow<\/em> - we&#x27;re here to spark important conversations, build community, and grow together, all while thoughtfully developing products for everyone&#x27;s needs. You can read more about our story <a href=\"\/pages\/building-marlow-1\" title=\"Building Marlow\"> here<\/a><a href=\"\/pages\/our-story-1\" title=\"Our Story\"> .<\/a><\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "5a445d38-b044-4f5c-ad7c-0616045cdcbc": {
+            "type": "text-columns",
+            "settings": {
+              "title": "<h1> What you can expect<\/h1>",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_iconsambassador-61.png",
+              "image_width_1": 150,
+              "title_1": "<h3>Engage in meaningful conversation<\/h3>",
+              "text_1": "",
+              "button_label_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_community-64_61560bdf-5496-4e4b-841c-366930b65a14.png",
+              "image_width_2": 150,
+              "title_2": "<h3>Become a part of <br>the community<\/h3>",
+              "text_2": "",
+              "button_label_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_producticon-65.png",
+              "image_width_3": 150,
+              "title_3": "<h3> Build an experience & <br>Enjoy our product <\/h3>",
+              "text_3": "",
+              "button_label_3": ""
+            }
+          },
+          "1d096af1-54d5-48b8-a572-b1f129d72af1": {
+            "type": "text-columns",
+            "settings": {
+              "title": "<h1>How it works<\/h1>",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/marlow_placeholder_imgs-60.png",
+              "image_width_1": 150,
+              "title_1": "<h3> Start conversations & Share your experience <\/h3>",
+              "text_1": "",
+              "button_label_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/marlow_placeholder_imgs-62.png",
+              "image_width_2": 150,
+              "title_2": "<h3> Repost blog story and<br> feed content<\/h3>",
+              "text_2": "",
+              "button_label_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/marlow_iconsambassador-63.png",
+              "image_width_3": 150,
+              "title_3": "<h3>Get involved in marketing and PR initiatives. Post content!<\/h3>",
+              "text_3": "",
+              "button_label_3": ""
+            }
+          },
+          "e87866b1-d4a2-4ade-9566-ace7cc694835": {
+            "type": "text-columns",
+            "settings": {
+              "title": "<h1>Hear From Marlow's Ambassador's<\/h1>",
+              "align_text": "center",
+              "alt": false,
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/Screen_Shot_2021-03-09_at_7.24.32_PM.png",
+              "image_width_1": 650,
+              "title_1": "<h1>Name, Age <\/h1>",
+              "text_1": "<p>&quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec imperdiet nisl. Phasellus lobortis ac libero non luctus. Ut dictum diam id dui.&quot;<\/p>",
+              "button_label_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/Screen_Shot_2021-03-08_at_11.08.48_AM.png",
+              "image_width_2": 380,
+              "title_2": "<h1>Name, Age<\/h1>",
+              "text_2": "<p>&quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec imperdiet nisl. Phasellus lobortis ac libero non luctus. Ut dictum diam id dui.&quot;<\/p>",
+              "button_label_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/Screen_Shot_2021-03-08_at_11.09.54_AM.png",
+              "image_width_3": 360,
+              "title_3": "<h1>Name, Age<\/h1>",
+              "text_3": "<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec imperdiet nisl. Phasellus lobortis ac libero non luctus. Ut dictum diam id dui.&quot;<\/p>",
+              "button_label_3": ""
+            }
+          },
+          "b77eaa63-76f3-4271-9b75-cee023237fe7": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_bannerssparklegreen-36.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "444766f9-c972-45f7-98e9-bb84d1652cd4": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": true,
+              "space_around": false,
+              "alt": true,
+              "code": "<div class=\"typeform-widget\" data-url=\"https:\/\/form.typeform.com\/to\/PPE0gcju?typeform-medium=embed-snippet\" style=\"width: 100%; height: 500px;\"><\/div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=\"typef_orm\", b=\"https:\/\/embed.typeform.com\/\"; if(!gi.call(d,id)) { js=ce.call(d,\"script\"); js.id=id; js.src=b+\"embed.js\"; q=gt.call(d,\"script\")[0]; q.parentNode.insertBefore(js,q) } })() <\/script>"
+            }
+          },
+          "05749eb1-8a15-4123-9d33-31a7a27fd89a": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_bannerssparklegreen-35.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "2789da93-55fa-4f2c-a7a0-aa9f2ac9b339": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": false,
+              "space_around": true,
+              "alt": false,
+              "code": "<h1 style=\"text-align:center;\">Brand Ambassador Faq<\/h1><div class=\"powr-faq\" id=\"167f01dd_1616985311\"><\/div><script src=\"https:\/\/www.powr.io\/powr.js?platform=shopify\"><\/script>"
+            }
+          },
+          "c4ef0cad-0534-41e1-9ff0-8143959bbeac": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Still have a question? drop us a line  at <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\" target=\"_blank\">   info@wearemarlow.com<\/a><\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true,
+              "alt": false
+            }
+          }
+        },
+        "block_order": [
+          "82ee0b2b-3241-4aac-b25b-d5d231bb8ae6",
+          "5259ad16-d963-4ecf-83c5-9aee808b09d2",
+          "98f4e06a-b1aa-4000-a363-a5d13cb7d581",
+          "6f8a71ba-164c-4149-b4ea-e8735e81735b",
+          "5a445d38-b044-4f5c-ad7c-0616045cdcbc",
+          "1d096af1-54d5-48b8-a572-b1f129d72af1",
+          "e87866b1-d4a2-4ade-9566-ace7cc694835",
+          "b77eaa63-76f3-4271-9b75-cee023237fe7",
+          "444766f9-c972-45f7-98e9-bb84d1652cd4",
+          "05749eb1-8a15-4123-9d33-31a7a27fd89a",
+          "2789da93-55fa-4f2c-a7a0-aa9f2ac9b339",
+          "c4ef0cad-0534-41e1-9ff0-8143959bbeac"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-referralprogram-template": {
+        "type": "page-referralprogram-template",
+        "blocks": {
+          "69af9ff8-cb32-4797-b179-d8969d28716b": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_bannerssparklegreen-36.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          },
+          "013b070a-7f97-46da-a9bf-f5f6b73c7822": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/marlow_referafriendprogram-04.png",
+              "image_width": 440,
+              "subtitle": "<h1> FrIENDS WITH BENEFITS<\/h1>",
+              "title": "",
+              "text": "<p>Spread the word and open up the conversation with our<strong> Give $5, Get $5 referral program.<\/strong><\/p><p>Refer a friend so that they get $5 off their first purchase, and you get $5 off your next one. <\/p><p>Just <strong>click the rewards button<\/strong> in the bottom left corner of your screen and select “<strong>Refer<\/strong>.” Once you’ve signed in, you can share your unique referral code with anyone. <\/p><p><br\/>Terms and Conditions:<a href=\"\/pages\/terms-conditions\" title=\"Terms & Conditions\"> Click here<\/a><\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_style": "primary",
+              "layout": "right",
+              "alt": true
+            }
+          },
+          "976839ee-73d9-46d1-842d-6fdc86dcb8bf": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/marlow_bannerssparklegreen-35.png",
+              "desktop_size": 0,
+              "mobile_size": 0,
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "69af9ff8-cb32-4797-b179-d8969d28716b",
+          "013b070a-7f97-46da-a9bf-f5f6b73c7822",
+          "976839ee-73d9-46d1-842d-6fdc86dcb8bf"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "1617045443e0e63e80": {
+        "type": "text-and-image",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/marlow_bundle3-46.png",
+          "image_width": 500,
+          "subtitle": "",
+          "title": "Bundle & Save 10%",
+          "text": "<p>Both our tampons and lubricant, <br\/>designed for a smoother insertion process.<\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/products\/bundle-save",
+          "button_style": "primary",
+          "layout": "right",
+          "alt": false
+        }
+      },
+      "marlow-blog-template": {
+        "type": "marlow-blog-template",
+        "settings": {
+          "header_image": "shopify:\/\/shop_images\/Untitled-1-01_5d415994-610f-4a07-97ab-f04821576b99.png",
+          "header_layout": "center",
+          "heading_font": "avenir_next_n5",
+          "heading_color": "#302ba3",
+          "heading_custom_font": "Gamine",
+          "heading_font_size": 52,
+          "subheading_font": "avenir_next_n4",
+          "subheading_custom_font": "",
+          "subheading_font_size": 14,
+          "subheading_text": "<h2 style=\"font-size:15px; color:#302BA3\"> Are my cramps normal? What does my discharge mean? Why have I never learnt any of this before? <br> <br> As menstruators ourselves, we know how ridiculous it is that menstruation is a taboo subject steeped in whispers and misinformation. <br> <br> Let's spark some much needed conversation.<\/h2>",
+          "article_title_font": "avenir_next_n6",
+          "article_title_custom_font": "Gamine",
+          "article_title_font_size": 24,
+          "article_title_color": "#000000",
+          "article_excerpt_font": "avenir_next_n4",
+          "article_excerpt_custom_font": "",
+          "article_excerpt_font_size": 10,
+          "article_pagination_num": 6
+        }
+      },
+      "16182522139868eed7": {
+        "type": "featured-collection-slider",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "description": "",
+          "home_featured_products": "homepage-collection-2",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "16293224623ea24962": {
+        "type": "advanced-content",
+        "blocks": {
+          "16293224623ea24962-1": {
+            "type": "html",
+            "settings": {
+              "code": "<br>\n<br>",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16293224623ea24962-1"
+        ],
+        "settings": {
+          "full_width": false,
+          "space_around": false,
+          "alt": false
+        }
+      },
+      "1629328837732ebf63": {
+        "type": "background-image-text",
+        "disabled": true,
+        "settings": {
+          "subtitle": "",
+          "title": "The beginning of a new period.",
+          "text": "<p>We spend over six years of our lives on our periods, so why do we awkwardly avoid talking about them? Why do we cruise down the aisle on auto-pilot? And why do we learn the bare minimum in sex ed?<br\/><br\/>As menstruators ourselves, we know how ridiculous it is that menstruation is steeped in whispers and misinformation.<br\/><br\/>At Marlow, we aren’t afraid to push the boundaries of what we’ve been socialized to “put up” with. Marlow exists to transform the way you experience menstrual health, from the conversations you start, to the information you receive, to the products you use.<\/p>",
+          "button_label": "Meet the Team",
+          "button_link": "shopify:\/\/pages\/our-story-1",
+          "image": "shopify:\/\/shop_images\/09A9179.jpg",
+          "desktop_size": -70,
+          "image_alignment": "80% 50%",
+          "color_border": "#fdf3eb",
+          "layout": "left"
+        }
+      },
+      "1629328868e9855cbc": {
+        "type": "advanced-content",
+        "disabled": true,
+        "blocks": {
+          "1629328868e9855cbc-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Asset_3.png",
+              "link": "",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "code": "We are all Marlow. We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing.",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "804167e4-7b96-4ea8-895f-3dd9f679312c": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Asset_4.png",
+              "link": "",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1629328868e9855cbc-0",
+          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9",
+          "804167e4-7b96-4ea8-895f-3dd9f679312c"
+        ],
+        "settings": {
+          "full_width": true,
+          "space_around": true,
+          "alt": false
+        }
+      },
+      "16293296320ac8aad2": {
+        "type": "featured-content",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "text": "<p>We are all Marlow. <\/p><p>We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing.<\/p>",
+          "align_text": "center",
+          "narrow_column": true,
+          "enlarge_text": true,
+          "alt": false
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "contact-form",
+            "settings": {
+              "title": "Contact us",
+              "show_phone": false,
+              "narrow_column": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "1634772893fece5c13": {
+        "type": "featured-content",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "text": "<p><em>Marlow's tampons and lubricant are produced to medical device standards and approved by Health Canada. Marlow tampons and lubricant have been tested together for safety. This product is not intended to diagnose, treat, cure or prevent any disease.<\/em><\/p>",
+          "align_text": "center",
+          "narrow_column": true,
+          "enlarge_text": false,
+          "alt": false
+        }
+      },
+      "1634775953118145c8": {
+        "type": "text-columns",
+        "disabled": true,
+        "blocks": {
+          "1634775953118145c8-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
+              "image_width": 650,
+              "title": "1. <br> Pull out the inner tube of the compact applicator.",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1634775953118145c8-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Untitled_design_2.png",
+              "image_width": 650,
+              "title": "2. <br> Dip Marlow tampon into lubricant.",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "009afc1e-a93d-462e-8e11-1e694f95ec54": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Untitled_design_2_249cf9ed-4f86-460c-9172-95b52748ff81.png",
+              "image_width": 650,
+              "title": "3. <br> Insert for a smooth experience.",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1634775953118145c8-1",
+          "1634775953118145c8-0",
+          "009afc1e-a93d-462e-8e11-1e694f95ec54"
+        ],
+        "settings": {
+          "title": "<h1> How It Works: <h2 style=\"font-size:20px\"> The Marlow lubricant bottle is engineered to perfectly coat your tampon in lubricant with one quick, mess-free dip.<\/h2> <\/h1>",
+          "align_text": "center",
+          "alt": false
+        }
+      },
+      "1634919474c8fe8db6": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1634919474c8fe8db6-0": {
+            "type": "image",
+            "settings": {
+              "title": "<h2 style=\"\" font-size:25px=\"\" color:=\"\">\n \"I didn’t realize that putting a tampon in is usually slightly painful, because with the lube it felt like nothing.\" <\/h2>\n<h2 style=\"font-size:19px ; color:#302BA3;\n\">- Emma <\/h2> <br>",
+              "title_size": 40,
+              "subheading": "",
+              "link": "shopify:\/\/products\/bundle-save",
+              "link_text": "SHOP NOW",
+              "color_accent": "#fbe800",
+              "text_align": "vertical-top horizontal-left",
+              "image": "shopify:\/\/shop_images\/Marlow_Review_FINAL_banner-01.png",
+              "image_mobile": "shopify:\/\/shop_images\/Marlow_Review_FINAL-02_bc790967-0c92-480c-86bd-c4a2bdfafe36.png",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1634919474c8fe8db6-0"
+        ],
+        "settings": {
+          "style": "minimal",
+          "desktop_size": 0,
+          "mobile_size": 0,
+          "autoplay": false,
+          "autoplay_speed": 7
+        }
+      },
+      "16358183091b76291c": {
+        "type": "slideshow",
+        "blocks": {
+          "16358183091b76291c-0": {
+            "type": "image",
+            "settings": {
+              "title": "<h1 style=\"font-size:38px; color:#302BA3\">Goodbye 👋 dry plastic stick, <br>hello lubricated comfort.<h2 style=\"font-size:15px;color:#302BA3; font-size:22px\">It's time for a smoother tampon experience.\n<\/h2>\n<\/h1> <div class=\"klaviyo-form-TBQ82T\"><\/div>\nSign up to be the first to know when we launch.",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-right",
+              "image": "shopify:\/\/shop_images\/sign_up_web_final-01.png",
+              "image_mobile": "shopify:\/\/shop_images\/sign_up_mobile_final-02.png",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "16358183091b76291c-0"
+        ],
+        "settings": {
+          "style": "minimal",
+          "desktop_size": 0,
+          "mobile_size": 0,
+          "autoplay": false,
+          "autoplay_speed": 7
+        }
+      },
+      "1635818313c88ccc0e": {
+        "type": "background-image-text",
+        "settings": {
+          "subtitle": "",
+          "title": "Join the conversation.",
+          "text": "<p>Follow us on Instagram to learn more: <\/p><p><\/p>",
+          "button_label": "Take me there!",
+          "button_link": "https:\/\/instagram.com\/marlow",
+          "image": "shopify:\/\/shop_images\/follow_us_5-01.png",
+          "desktop_size": 0,
+          "image_alignment": "center center",
+          "color_border": "#fbe800",
+          "layout": "left"
+        }
+      },
+      "163582277477c2503a": {
+        "type": "marquee",
+        "settings": {
+          "text": "",
+          "link": "",
+          "text_size": 20,
+          "text_spacing": true,
+          "color_scheme": "button",
+          "direction": "left",
+          "speed": "slow"
+        }
+      }
+    },
+    "content_for_index": [
+      "16148039049ff1dd56",
+      "16358183091b76291c",
+      "163582277477c2503a",
+      "1635818313c88ccc0e",
+      "16293224623ea24962",
+      "1634775953118145c8",
+      "1634919474c8fe8db6",
+      "1559098181700",
+      "1629328868e9855cbc",
+      "16293296320ac8aad2",
+      "1559586187853",
+      "16148039706dc80f17",
+      "1617045443e0e63e80",
+      "16182522139868eed7",
+      "1634772893fece5c13",
+      "1629328837732ebf63"
+    ]
+  },
+  "presets": {
+    "Core": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "round",
+      "button_type_style": "normal",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#f9f9f9",
+      "color_alt_text": "#000000",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_button": "#000000",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#f75d44",
+      "color_cart_dot_text": "#ffffff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_overlay_text_shadow": 20,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#fff",
+      "color_sale_price": "#000000",
+      "color_sale_tag": "#990000",
+      "color_small_image_bg": "#ffffff",
+      "desktop_loader_width": 100,
+      "mobile_loader_width": 100,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "roboto_condensed_n4",
+      "type_base_line_height": 1.6,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 46,
+      "type_header_capitalize": true,
+      "type_header_font_family": "roboto_condensed_i7",
+      "type_header_line_height": 1,
+      "type_header_spacing": "-25",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": true,
+            "show_announcement": false,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "show_social_icons": true,
+            "menu": "footer",
+            "newsletter_title": "Join the club",
+            "newsletter_richtext": "",
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1559681273277": {
+              "type": "image-hero",
+              "settings": {
+                "title_size": 80,
+                "text_align": "vertical-center horizontal-center"
+              }
+            },
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 450,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643392013": {
+              "type": "map",
+              "settings": {
+              }
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "large"
+              }
+            },
+            "1558643225272": {
+              "type": "hero-video",
+              "settings": {
+                "title": "Keep it short\nand sweet.",
+                "title_size": 60,
+                "subheading": "Explain your brand in more depth on your product pages",
+                "text_align": "vertical-center horizontal-center",
+                "section_height": "750px",
+                "mobile_height": "100vh"
+              }
+            }
+          },
+          "block_order": [
+            "1559681273277",
+            "1558643031646",
+            "1558643392013",
+            "1558643431127",
+            "1558643225272"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "1543003878234": {
+          "type": "featured-collections",
+          "blocks": {
+            "1543003878234-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1543003878234-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1543003878234-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1543003878234-3": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1543003878234-0",
+            "1543003878234-1",
+            "1543003878234-2",
+            "1543003878234-3"
+          ],
+          "settings": {
+            "alt": true,
+            "title": "Shop all"
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+          }
+        },
+        "1556162802939": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row_desktop": 4,
+            "per_row_mobile": "2",
+            "description": "For more traditional layouts"
+          }
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {
+            "description": "With infinite scrolling"
+          }
+        },
+        "1558626745581": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true
+          }
+        },
+        "1559096311192": {
+          "type": "hero-animated",
+          "blocks": {
+            "1559096311192-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "1559097202495": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1559096311192-0",
+            "1559097202495"
+          ],
+          "settings": {
+            "style": "gif",
+            "title": "Make an impression",
+            "title_size": 80,
+            "text_align": "vertical-center horizontal-center"
+          }
+        },
+        "1559098181700": {
+          "type": "slideshow",
+          "blocks": {
+            "1559098181700-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "text_align": "vertical-bottom horizontal-left"
+              }
+            }
+          },
+          "block_order": [
+            "1559098181700-0"
+          ],
+          "settings": {
+          }
+        },
+        "1559321610782": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-bottom horizontal-center",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true
+          }
+        },
+        "1559585995085": {
+          "type": "featured-collection-slider",
+          "settings": {
+            "description": "With infinite scrolling"
+          }
+        },
+        "1559586187853": {
+          "type": "marquee",
+          "settings": {
+            "text": "Follow us for monthly apparel giveaways",
+            "text_size": 36
+          }
+        },
+        "1559687247066": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_label": "Our story",
+            "button_style": "secondary",
+            "layout": "right"
+          }
+        },
+        "1559687361077": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_label": "Contact us",
+            "button_style": "secondary",
+            "layout": "left"
+          }
+        },
+        "1559687710135": {
+          "type": "map",
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "1559321610782",
+        "1559585995085",
+        "1558626745581",
+        "1559096311192",
+        "1556162914490",
+        "1559098181700",
+        "1556162802939",
+        "1543003878234",
+        "1559687247066",
+        "1559687361077",
+        "1559687710135",
+        "1559586187853"
+      ]
+    },
+    "Luxe": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#ffffff",
+      "color_alt_text": "#333029",
+      "color_announcement": "#c67066",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#fdfbfa",
+      "color_body_text": "#333029",
+      "color_button": "#c67066",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#c67066",
+      "color_drawer_background": "#fdf9f5",
+      "color_drawer_text": "#333029",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#eee5e0",
+      "color_newsletter": "#c67066",
+      "color_newsletter_text": "#ffffff",
+      "color_sale_price": "#333029",
+      "color_sale_tag": "#c67066",
+      "color_small_image_bg": "#fdfbfa",
+      "desktop_loader_width": 140,
+      "mobile_loader_width": 130,
+      "product_grid_image_size": "natural",
+      "product_hover_details": true,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "futura_n4",
+      "type_base_line_height": 1.7,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 50,
+      "type_header_capitalize": false,
+      "type_header_font_family": "itc_novarese_n5",
+      "type_header_line_height": 1.1,
+      "type_header_spacing": "0",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": true,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "show_social_icons": true,
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": false,
+            "blog_show_tags": true,
+            "blog_show_date": false,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": false,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 400,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643225272": {
+              "type": "hero-video",
+              "settings": {
+                "title": "Keep it short\nand sweet.",
+                "title_size": 47,
+                "subheading": "Explain your brand in more depth on your product pages",
+                "text_align": "vertical-center horizontal-center",
+                "section_height": "750px",
+                "mobile_height": "100vh"
+              }
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "small"
+              }
+            },
+            "1558643392013": {
+              "type": "map",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1558643031646",
+            "1558643225272",
+            "1558643431127",
+            "1558643392013"
+          ],
+          "settings": {
+            "page_title_enable": true,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": true,
+            "display_type": "all"
+          }
+        },
+        "1555097143929": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_style": "btn",
+            "layout": "right"
+          }
+        },
+        "1555439851826": {
+          "type": "background-image-text",
+          "settings": {
+            "color_border": "#4f1c3a",
+            "layout": "right"
+          }
+        },
+        "1556162802939": {
+          "type": "featured-collection-slider",
+          "settings": {
+          }
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {
+          }
+        },
+        "1558625522348": {
+          "type": "background-image-text",
+          "settings": {
+            "color_border": "#4f1c3a",
+            "layout": "left"
+          }
+        },
+        "1558626497917": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-center horizontal-center",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        },
+        "1558626745581": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true
+          }
+        },
+        "1559155590855": {
+          "type": "text-columns",
+          "blocks": {
+            "1559155590855-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": false,
+                "title": "Reason one"
+              }
+            },
+            "1559155590855-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": false,
+                "title": "Reason two"
+              }
+            }
+          },
+          "block_order": [
+            "1559155590855-0",
+            "1559155590855-1"
+          ],
+          "settings": {
+            "title": "Why choose us?",
+            "align_text": "center",
+            "alt": true
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "newsletter_enable": true,
+            "show_share_buttons": false,
+            "show_image": true
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "per_row": "small"
+          }
+        }
+      },
+      "content_for_index": [
+        "1558626497917",
+        "1556162914490",
+        "1558626745581",
+        "1555097143929",
+        "1555439851826",
+        "1559155590855",
+        "1556162802939",
+        "1558625522348"
+      ]
+    },
+    "Hype": {
+      "animate_images": false,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "color_alt_bg": "#000000",
+      "color_alt_text": "#ffffff",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_cart_dot": "#FF2300",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#ffffff",
+      "color_small_image_bg": "#f2f2f2",
+      "desktop_loader_width": 190,
+      "mobile_loader_width": 180,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": true,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "basic_commercial_n7",
+      "type_base_line_height": 1.3,
+      "type_base_size": 20,
+      "type_base_spacing": "25",
+      "type_header_base_size": 48,
+      "type_header_capitalize": true,
+      "type_header_font_family": "basic_commercial_n7",
+      "type_header_line_height": 0.9,
+      "type_header_spacing": "25",
+      "type_product_capitalize": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 400,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "small"
+              }
+            }
+          },
+          "block_order": [
+            "1558643031646",
+            "1558643431127"
+          ],
+          "settings": {
+            "page_title_enable": true,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+          }
+        },
+        "1555097143929": {
+          "type": "text-and-image",
+          "settings": {
+          }
+        },
+        "1556162802939": {
+          "type": "featured-collection-slider",
+          "settings": {
+          }
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {
+          }
+        },
+        "1559240039950": {
+          "type": "hero-animated",
+          "blocks": {
+            "1559240039950-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "1559240039950-1": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "1559309176406": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1559240039950-0",
+            "1559240039950-1",
+            "1559309176406"
+          ],
+          "settings": {
+            "style": "gif",
+            "title_size": 72,
+            "text_align": "vertical-bottom horizontal-right"
+          }
+        },
+        "1559241610369": {
+          "type": "marquee",
+          "settings": {
+            "text": "☞ FREE SHIPPING AND RETURNS",
+            "text_size": 70,
+            "text_spacing": true,
+            "color_scheme": "text",
+            "direction": "left"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "per_row": "large"
+          }
+        },
+        "1559249041610": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-bottom horizontal-left",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        }
+      },
+      "content_for_index": [
+        "1559240039950",
+        "1555097143929",
+        "1559241610369",
+        "1556162914490",
+        "1559249041610",
+        "1556162802939"
+      ]
+    }
+  }
+}

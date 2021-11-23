@@ -1,0 +1,135 @@
+{%- assign swatch_file_extension = 'png' -%}
+{%- assign option_index = forloop.index -%}
+
+
+<div class="variant-wrapper variant-wrapper--{{ variant_type }} js">
+  <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels_enable %} hidden-label{% endunless %}"
+    for="ProductSelect-{{ section_id }}-option-{{ forloop.index0 }}">
+    {{ option.name }}
+    {%- if is_color -%}
+      <span class="variant__label-info">
+        &mdash;
+        <span
+          id="VariantColorLabel-{{ section_id }}-{{ forloop.index0 }}"
+          data-option-index="{{ color_option_index }}">
+          {{ option.selected_value }}
+        </span>
+      </span>
+    {%- endif -%}
+  </label>
+
+  <fieldset class="variant-input-wrap"
+    name="{{ option.name }}"
+    data-index="option{{ option_index }}"
+    data-handle="{{ option.name | handleize }}"
+    id="ProductSelect-{{ section_id }}-option-{{ forloop.index0 }}">
+    <legend class="hide">{{ option.name }}</legend>
+    
+    <label class="smartrr-grp-label"><input type="radio" class="smartrr-grp-input" name="form-sub-type" value="sub" checked="checked" />
+      <div class="smartrr-selling-plan-group-input-display"></div>
+      <span>Subscribe & Save</span>
+    </label>
+    <div data-smartrr-choose-sub>
+      <div data-smartrr-subscription-benefits>
+        <div>3 boxes of tampons, 3 bottles of lubricant</div>
+        {% for group in product.selling_plan_groups %}
+        {% for plan in group.selling_plans %}
+         <div data-smartrr-benefits-all>{{ plan.options[0].value }}</div>
+         {% endfor %}
+         {% endfor %}
+        <div data-smartrr-benefits-all>Skip or Cancel Anytime</div>
+        <div data-smartrr-benefits-all>Free Shipping</div>
+      </div>
+      {% for subvalue in option.values %}
+      {% if subvalue contains 'Subscription' %}
+      {% render 'variant-button-child', option: option, value: subvalue, product: product, loopIndex: forloop.index0, option_index:option_index %}
+      {% endif %}
+      {% endfor %}
+    </div>    
+    
+    <label class="smartrr-grp-label"><input type="radio" class="smartrr-grp-input" name="form-sub-type" value="otp" />
+      <div class="smartrr-selling-plan-group-input-display"></div>
+      <span>One Time purchase</span>
+    </label>
+    <div data-smartrr-choose-otp class="hide">
+      <div data-smartrr-onetime-benefits>
+        <div>1 box of tampons, 1 bottle of lubricant</div>
+        <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
+        <div data-smartrr-benefits-onetime>Free Shipping</div>
+      </div>
+      {% for subvalue in option.values %}
+      {% unless subvalue contains 'Subscription' %}
+      {% render 'variant-button-child', option: option, value: subvalue, product: product, loopIndex: forloop.index0, option_index:option_index  %}
+      {% endunless %}
+      {% endfor %}
+    </div>
+    
+  </fieldset>
+</div>
+
+<style>
+    .variant-input-wrap{
+      display: flex;
+      flex-direction: column;
+    }
+    .smartrr-grp-label{
+      margin-bottom:-5px;
+    }
+    [data-smartrr-choose-sub]{
+      padding-left: 18px;
+    }
+    [data-smartrr-choose-otp]{
+      padding-left: 18px;
+    }
+    /*  custom radio  */
+    .smartrr-grp-input {
+      position: absolute;
+      left: -9999px;
+    }
+    .smartrr-grp-input + .smartrr-selling-plan-group-input-display {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      height: 22px;
+      display: inline-block;
+      color: #D1CE4C;
+      top: 7px;
+    }
+
+    .smartrr-grp-input + .smartrr-selling-plan-group-input-display:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #D1CE4C;
+      border-radius: 100%;
+      /*background: #fff;*/
+      box-sizing: border-box;
+    }
+
+    .smartrr-grp-input + .smartrr-selling-plan-group-input-display:after {
+      content: '';
+      background: #D1CE4C;/*#70c497;*/
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 3px;
+      left: 3px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+
+      /*opacity: 0;*/
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+
+    .smartrr-grp-input:checked + .smartrr-selling-plan-group-input-display:after {
+      /*opacity: 1;*/
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    /* end radio */
+
+</style>

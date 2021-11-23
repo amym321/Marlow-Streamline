@@ -1,0 +1,157 @@
+{% comment %}
+  This file is maintained by Smartrr. 
+  Use the "Theming" section of the Smartrr app to configure theme settings. 
+{% endcomment %}
+<script>
+if (!window.smartrr) {
+  window.smartrr = {};
+}
+window.smartrr.theme = {
+  "overrideCSS": ".smartrr-portal-delivery-addresses-editable-section-content {\n  color:#302BA3;\n}\n\n.smartrr-portal-apply-discount-container {\n  margin-right: 9rem; \n}\n\n.smartrr-portal-secondary-button, \n.smartrr-portal-gift-action, .smartrr-portal-gift {\n  background: #fff;\n  color: #00B48A;\n}",
+  "primaryColor": "#302BA3",
+  "secondaryColor": "#FDF3EB",
+  "mainContentBackgroundColor": "#fff",
+  "mainContentBorderRadius": 8,
+  "mainContentBorderColor": "#302BA3",
+  "mainContentBorderWidth": 1,
+  "loaderPrimaryColor": "#cdcce6",
+  "loaderSecondaryColor": "#302BA3",
+  "bodyBackgroundColor": "#fdf3eb",
+  "bodyTextFontFamily": "\"Avenir Next\",         sans-serif",
+  "bodyTextFontWeight": "bold",
+  "bodyTextColor": "#302BA3",
+  "heading1TextFontFamily": "\"Avenir Next\",         sans-serif",
+  "heading1TextFontSize": 22,
+  "heading1FontWeight": "bolder",
+  "heading1TextColor": "#302BA3",
+  "heading2TextFontFamily": "\"Avenir Next\",         sans-serif",
+  "heading2TextFontSize": 16,
+  "heading2FontWeight": "normal",
+  "heading2TextColor": "#302BA3",
+  "heading3TextFontFamily": "\"Avenir Next\",         sans-serif",
+  "heading3TextFontSize": 16,
+  "heading3FontWeight": "normal",
+  "heading3TextColor": "#302BA3",
+  "heading4TextFontFamily": "\"Avenir Next\",         sans-serif",
+  "heading4TextFontSize": 16,
+  "heading4FontWeight": "normal",
+  "heading4TextColor": "#302BA3",
+  "buttonBackgroundColor": "#D1CE4C",
+  "buttonFontFamily": "\"Avenir Next\",sans-serif",
+  "buttonFontSize": 16,
+  "buttonFontWeight": "normal",
+  "buttonTextColor": "#302BA3",
+  "buttonBorderRadius": 22,
+  "buttonBorderColor": "#302BA3",
+  "buttonBorderWidth": 0,
+  "dropdownBackgroundColor": "#fbe800",
+  "dropdownTextColor": "#302BA3",
+  "dropdownBorderRadius": 22,
+  "dropdownBorderColor": "#FBE800",
+  "dropdownBorderWidth": 0,
+  "dropdownFontFamily": "\"Avenir Next\",         sans-serif",
+  "dropdownFontSize": 16,
+  "dropdownFontWeight": "normal",
+  "smallProductImageBorderRadius": 12,
+  "mediumProductImageBorderRadius": 14,
+  "largeProductImageBorderRadius": 16,
+  "purchasableThemes": []
+}
+</script>
+
+<style>
+body {
+  background-color: #fdf3eb;
+  transition: background-color .15s ease-in-out;
+}
+
+#smartrr_account,
+#smartrr_slide_panel,
+#smartrr_toast_container {
+  box-sizing: border-box;
+
+  color: #302BA3;
+  font-family: "Avenir Next",         sans-serif;
+  font-weight: bold;
+  background-color: #fdf3eb;
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+#smartrr_account *,
+#smartrr_account *:before,
+#smartrr_account *:after,
+#smartrr_slide_panel *,
+#smartrr_slide_panel *:before,
+#smartrr_slide_panel *:after,
+#smartrr_toast_container *,
+#smartrr_toast_container *:before,
+#smartrr_toast_container *:after {
+  box-sizing: border-box;
+}
+
+#smartrr_toast_container {
+  z-index: 10000001;
+}
+
+#smartrr_toast_container .Toastify__toast-container {
+  z-index: 10000002;
+}
+
+.hide-in-customer-portal {
+  display: none;
+}
+
+#smartrr_account,
+#smartrr_slide_panel,
+#smartrr_toast_container {
+  
+--smartrr-primaryColor: #302BA3;
+--smartrr-secondaryColor: #FDF3EB;
+--smartrr-mainContentBackgroundColor: #fff;
+--smartrr-mainContentBorderRadius: 8px;
+--smartrr-mainContentBorderColor: #302BA3;
+--smartrr-mainContentBorderWidth: 1px;
+--smartrr-loaderPrimaryColor: #cdcce6;
+--smartrr-loaderSecondaryColor: #302BA3;
+--smartrr-bodyBackgroundColor: #fdf3eb;
+--smartrr-bodyTextFontFamily: "Avenir Next",         sans-serif;
+--smartrr-bodyTextFontWeight: bold;
+--smartrr-bodyTextColor: #302BA3;
+--smartrr-heading1TextFontFamily: "Avenir Next",         sans-serif;
+--smartrr-heading1TextFontSize: 22px;
+--smartrr-heading1FontWeight: bolder;
+--smartrr-heading1TextColor: #302BA3;
+--smartrr-heading2TextFontFamily: "Avenir Next",         sans-serif;
+--smartrr-heading2TextFontSize: 16px;
+--smartrr-heading2FontWeight: normal;
+--smartrr-heading2TextColor: #302BA3;
+--smartrr-heading3TextFontFamily: "Avenir Next",         sans-serif;
+--smartrr-heading3TextFontSize: 16px;
+--smartrr-heading3FontWeight: normal;
+--smartrr-heading3TextColor: #302BA3;
+--smartrr-heading4TextFontFamily: "Avenir Next",         sans-serif;
+--smartrr-heading4TextFontSize: 16px;
+--smartrr-heading4FontWeight: normal;
+--smartrr-heading4TextColor: #302BA3;
+--smartrr-buttonBackgroundColor: #D1CE4C;
+--smartrr-buttonTextColor: #302BA3;
+--smartrr-buttonFontFamily: "Avenir Next",sans-serif;
+--smartrr-buttonFontSize: 16px;
+--smartrr-buttonFontWeight: normal;
+--smartrr-buttonBorderRadius: 22px;
+--smartrr-dropdownBackgroundColor: #fbe800;
+--smartrr-dropdownTextColor: #302BA3;
+--smartrr-dropdownFontFamily: "Avenir Next",         sans-serif;
+--smartrr-dropdownFontSize: 16px;
+--smartrr-dropdownFontWeight: normal;
+--smartrr-dropdownBorderRadius: 22px;
+--smartrr-buttonBorderColor: #302BA3;
+--smartrr-buttonBorderWidth: 0px;
+--smartrr-dropdownBorderColor: #FBE800;
+--smartrr-dropdownBorderWidth: 0px;
+--smartrr-smallProductImageBorderRadius: 12px;
+--smartrr-mediumProductImageBorderRadius: 14px;
+--smartrr-largeProductImageBorderRadius: 16px;
+}
+
+</style>
