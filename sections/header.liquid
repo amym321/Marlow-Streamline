@@ -161,7 +161,8 @@
           {% comment %}
             Center mobile logo if icons are not visible
           {% endcomment %}
-          <div class="header-item header-item--icons{% if mobile_logo_only %} small--hide{% endif %}">
+          {% comment %} code change - am. remove class if mobile_logo_only small--hide endif {% endcomment %}
+          <div class="header-item header-item--icons">
             {%- render 'header-icons', section: section, menu_alignment: menu_alignment -%}
           </div>
         </div>
@@ -175,6 +176,7 @@
     </header>
   </div>
 
+  
   {%- if mobile_menu_style == 'thumb' -%}
     {%- if main_menu != blank -%}
       <div class="site-nav__thumb-menu site-nav__thumb-menu--inactive">
@@ -204,6 +206,109 @@
       </div>
     {%- endif -%}
   {%- endif -%}
+
+
+  {% comment %} code added - am. new mobile menu{% endcomment %}
+  {% comment %}
+  {%- if mobile_menu_style == 'thumb' -%}
+  <h2>test</h2>
+  <nav class="mobile-nav-wrapper medium-up--hide critical-hidden" role="navigation">
+    <ul id="MobileNav" class="mobile-nav">
+      {% for link in linklists[section.settings.main_linklist].links %}
+        {%- assign outerLoopIndex = forloop.index -%}
+
+        <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+          {% if link.links != blank %}
+            {% capture child_list_handle %}{{ link.handle }}-{{ outerLoopIndex }}{% endcapture %}
+            <button type="button" class="btn--link js-toggle-submenu mobile-nav__link{% if link.child_active %} mobile-nav__link--active{% endif %}" data-target="{{ child_list_handle }}" data-level="1" aria-expanded="false">
+              <span class="mobile-nav__label">{{ link.title | escape }}</span>
+              <div class="mobile-nav__icon">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 14 14"><path d="M3.871.604c.44-.439 1.152-.439 1.591 0l5.515 5.515s-.049-.049.003.004l.082.08c.439.44.44 1.153 0 1.592l-5.6 5.6a1.125 1.125 0 0 1-1.59-1.59L8.675 7 3.87 2.195a1.125 1.125 0 0 1 0-1.59z" fill="#fff"/></svg>
+              </div>
+            </button>
+            <ul class="mobile-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
+              <li class="visually-hidden" tabindex="-1" data-menu-title="2">
+                {{- link.title }} {{ 'layout.navigation.menu' | t -}}
+              </li>
+              <li class="mobile-nav__item border-bottom">
+                <div class="mobile-nav__table">
+                  <div class="mobile-nav__table-cell mobile-nav__return">
+                    <button class="btn--link js-toggle-submenu mobile-nav__return-btn" type="button" aria-expanded="true" aria-label="{{ link.title }}">
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 14 14"><path d="M10.129.604a1.125 1.125 0 0 0-1.591 0L3.023 6.12s.049-.049-.003.004l-.082.08c-.439.44-.44 1.153 0 1.592l5.6 5.6a1.125 1.125 0 0 0 1.59-1.59L5.325 7l4.805-4.805c.44-.439.44-1.151 0-1.59z" fill="#fff"/></svg>
+                    </button>
+                  </div>
+                  <span class="mobile-nav__sublist-link mobile-nav__sublist-header mobile-nav__sublist-header--main-nav-parent">
+                    <span class="mobile-nav__label">{{ link.title | escape }}</span>
+                  </span>
+                </div>
+              </li>
+
+              {% for childlink in link.links %}
+                <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                  {% if childlink.links != blank %}
+                    {% capture grandchild_list_handle %}{{ childlink.handle }}-{{ outerLoopIndex }}-{{ forloop.index }}{% endcapture %}
+                    <button type="button" class="btn--link js-toggle-submenu mobile-nav__link mobile-nav__sublist-link" data-target="{{ grandchild_list_handle }}" aria-expanded="false">
+                      <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
+                      <div class="mobile-nav__icon">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 14 14"><path d="M3.871.604c.44-.439 1.152-.439 1.591 0l5.515 5.515s-.049-.049.003.004l.082.08c.439.44.44 1.153 0 1.592l-5.6 5.6a1.125 1.125 0 0 1-1.59-1.59L8.675 7 3.87 2.195a1.125 1.125 0 0 1 0-1.59z" fill="#fff"/></svg>
+                      </div>
+                    </button>
+                    <ul class="mobile-nav__dropdown" data-parent="{{ grandchild_list_handle }}" data-level="3">
+                      <li class="visually-hidden" tabindex="-1" data-menu-title="3">
+                        {{- childlink.title }} {{ 'layout.navigation.menu' | t -}}
+                      </li>
+                      <li class="mobile-nav__item border-bottom">
+                        <div class="mobile-nav__table">
+                          <div class="mobile-nav__table-cell mobile-nav__return">
+                            <button type="button" class="btn--link js-toggle-submenu mobile-nav__return-btn" data-target="{{ child_list_handle }}" aria-expanded="true" aria-label="{{ childlink.title }}">
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 14 14"><path d="M10.129.604a1.125 1.125 0 0 0-1.591 0L3.023 6.12s.049-.049-.003.004l-.082.08c-.439.44-.44 1.153 0 1.592l5.6 5.6a1.125 1.125 0 0 0 1.59-1.59L5.325 7l4.805-4.805c.44-.439.44-1.151 0-1.59z" fill="#fff"/></svg>
+                            </button>
+                          </div>
+                          <a href="{{ childlink.url }}"
+                            class="mobile-nav__sublist-link mobile-nav__sublist-header"
+                            {% if childlink.current %} aria-current="page"{% endif %}
+                          >
+                            <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
+                          </a>
+                        </div>
+                      </li>
+                      {% for grandchildlink in childlink.links %}
+                        <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                          <a href="{{ grandchildlink.url }}"
+                            class="mobile-nav__sublist-link"
+                            {% if grandchildlink.current %} aria-current="page"{% endif %}
+                          >
+                            <span class="mobile-nav__label">{{ grandchildlink.title | escape }}</span>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <a href="{{ childlink.url }}"
+                      class="mobile-nav__sublist-link"
+                      {% if childlink.current %} aria-current="page"{% endif %}
+                    >
+                      <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
+                    </a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a href="{{ link.url }}"
+              class="mobile-nav__link{% if link.active %} mobile-nav__link--active{% endif %}"
+              {% if link.current %} aria-current="page"{% endif %}
+            >
+              <span class="mobile-nav__label">{{ link.title | escape }}</span>
+            </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {%- endif -%}
+  {% endcomment %}
+
 </div>
 
 {%- if section.settings.header_search_enable -%}
