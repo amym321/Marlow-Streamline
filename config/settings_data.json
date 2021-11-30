@@ -81,7 +81,7 @@
           "logo": "shopify:\/\/shop_images\/marlow_bluelogo-16.png",
           "logo-inverted": "shopify:\/\/shop_images\/marlow_bluelogo-16.png",
           "desktop_logo_width": 190,
-          "mobile_logo_width": 200,
+          "mobile_logo_width": 190,
           "logo_hide_mobile": false,
           "main_menu_link_list": "header-2",
           "show_announcement": false,
