@@ -35,6 +35,7 @@
     "type_base_line_height": 1.6,
     "button_type_style": "normal",
     "button_style": "round",
+    "type_navigation_size": 24,
     "animate_images": false,
     "logo_loader_image": "shopify:\/\/shop_images\/marlow_loading_graphic-50.png",
     "desktop_loader_width": 370,
