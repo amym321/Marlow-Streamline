@@ -9875,7 +9875,7 @@ select .variant-input{
 
 /* Make Mobile menu take whole width */
 .slide-nav__overflow--thumb { 
-  left: 80px; 
+  left: 0px; 
   right: 0px; 
 }
 
@@ -9887,11 +9887,19 @@ select .variant-input{
   }
 }
 
+/* header background homepage since open mobile menu pushes page down */
 .homepage-color {
-  /* background-color:var(--colorBody); */
   background-color: #ceca4c;
-  /* background-color: coral;    */
-  /* background-color:var(--colorNav); */
-  /* background-color: initial;  */
 }
 
+/* header position unchanged when mobile menu open */
+@media only screen and (max-width: 768px) {
+  .header-up-top { 
+    position: absolute; 
+    top: 0;  
+  }
+
+  .margin-up-top {
+    margin-bottom: 100px;
+  }
+}

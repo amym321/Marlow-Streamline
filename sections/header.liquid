@@ -84,7 +84,7 @@
 <div data-section-id="{{ section.id }}" data-section-type="header-section">
   <div
     data-header-style="{{ section.settings.header_style }}"
-    class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
+    class=" margin-up-top header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
 
     {%- if section.settings.show_announcement -%}
       {%- if section.settings.show_announcement_home_only -%}
@@ -103,9 +103,9 @@
     {%- assign mobile_logo_only = true -%}
 
     <header
-      class="site-header{% if section.settings.logo_hide_mobile %}{% unless template_name == 'index' %} small--hide{% endunless %}{% endif %}"
+      class="site-header header-up-top {% if section.settings.logo_hide_mobile %}{% unless template_name == 'index' %} small--hide{% endunless %}{% endif %}"
       data-overlay="{{ overlay_header }}">
-      <div class="page-width">
+      <div class="page-width  ">
         <div
           class="header-layout header-layout--{{ menu_alignment }}{% if mobile_logo_only %} header-layout--mobile-logo-only{% endif %}"
           data-logo-align="{{ logo_alignment }}">
