@@ -9820,7 +9820,7 @@ select .variant-input{
 
 /* icons  blue  */
 .icon-close, .icon-hamburger, .icon-user, .icon-cart, .icon-chevron-right {
-  color:{{ settings.color_body_text | default: "#fff" }};
+  color:{{ settings.color_body_text | default: "#302ba3" }};
 }
 
 /* cart icon text bubble when cart has items */
@@ -9852,16 +9852,11 @@ select .variant-input{
 }
 
 /* mobile menu */
+
 [data-button_style=round] .slide-nav__overflow--thumb,
 [data-button_style=round] .slide-nav__wrapper {
-  border-top-right-radius: initial; 
-  border-top-left-radius: initial; 
-  
-}
-
-/* not working */
-.btn .site-nav__thumb-button {
-  /* border-radius: initial;  */
+  border-top-right-radius: initial;
+  border-top-left-radius: initial;
 }
 
 /* this is the close part & original menu pill only */
@@ -9878,30 +9873,23 @@ select .variant-input{
   display: none;
 }
 
-
 /* Make Mobile menu take whole width */
+.slide-nav__overflow--thumb { 
+  left: 80px; 
+  right: 0px; 
+}
+
+/* Move menu up, but under header */
 @media only screen and (max-width: 768px) {
-  .slide-nav__overflow--thumb { 
-    left: 30px; 
-    right: 0px; 
+.slide-nav__overflow--thumb { 
+    position: relative;  
+    top: 100px;   /* 65*/
   }
 }
-/* Move menu up, but under header */
-.slide-nav__overflow--thumb { 
-  position: relative;  
-  top: 100px;   /* 65*/
-}
-/* Header color */
-/* .header-wrapper--overlay:not(.header-wrapper--sticky) .site-header { 
-  background-color: var(--colorNav);
-}
-.header-wrapper--overlay{ 
-  background:linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%,transparent); 
-} */
 
-.bg-colr {
+.homepage-color {
   /* background-color:var(--colorBody); */
-
+  background-color: #ceca4c;
   /* background-color: coral;    */
   /* background-color:var(--colorNav); */
   /* background-color: initial;  */
