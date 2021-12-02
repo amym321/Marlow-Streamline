@@ -9868,12 +9868,13 @@ select .variant-input{
 
 /* Move menu up, but under header */
 @media only screen and (max-width: 768px) {
-.slide-nav__overflow--thumb { 
+.slide-nav__overflow--thumb,
+.slide-nav__wrapper { 
     position: relative;  
     top: 80px;   /* 65*/
     height: 100vh;
     /* background-color:var(--colorAlt); */
-    /* background-color: #ceca4c; */
+    background-color: #ceca4c;
   }
 }
 
@@ -9883,7 +9884,7 @@ select .variant-input{
 }
 .slide-nav__overflow--thumb.js-menu--is-open,
 .js-menu--is-open .slide-nav__wrapper  {
-  /* background-color: #ceca4c; */
+  background-color: #ceca4c;
 }
 
 /* header background on homepage/index since open mobile menu pushes page down */
