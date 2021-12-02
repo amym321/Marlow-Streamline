@@ -9868,35 +9868,15 @@ select .variant-input{
 
 /* Move menu up, but under header */
 @media only screen and (max-width: 768px) {
-.slide-nav__wrapper,
 .slide-nav__overflow--thumb { 
-    /* top: 80px;   */
-    top: 200px;
-    /* height: calc(90vh - 80px); */
-    height: 100vh;
-}
-  .slide-nav__overflow--thumb { 
     position: relative;  
-    /* background-color:var(--colorAlt); */
-    background-color: #ceca4c;
-    background-color: pink;
+    top: 80px;   /* 65*/
+  }
 }
 
-/* mobile menu color */
-.slide-nav__wrapper {
-  background-color: #ffffff00
-}
-
-/* .js-menu--is-open .slide-nav__wrapper, */
-.slide-nav__overflow--thumb.js-menu--is-open {
-  background-color: #ceca4c;
-  background-color: gray;
-}
-
-/* header background on homepage/index since open mobile menu pushes page down */
+/* header background homepage since open mobile menu pushes page down */
 .homepage-color {
   background-color: #ceca4c;
-  background-color: red;
 }
 
 /* header position unchanged when mobile menu open. and mobile header centered */
