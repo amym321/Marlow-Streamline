@@ -9868,8 +9868,8 @@ select .variant-input{
 
 /* Move menu up, but under header */
 @media only screen and (max-width: 768px) {
-.slide-nav__overflow--thumb,
-.slide-nav__wrapper { 
+/* .slide-nav__wrapper, */
+.slide-nav__overflow--thumb { 
     position: relative;  
     top: 80px;   /* 65*/
     height: 100vh;
@@ -9883,8 +9883,9 @@ select .variant-input{
 .slide-nav__wrapper {
   background-color: #ffffff00
 }
-.slide-nav__overflow--thumb.js-menu--is-open,
-.js-menu--is-open .slide-nav__wrapper  {
+
+/* .js-menu--is-open .slide-nav__wrapper, */
+.slide-nav__overflow--thumb.js-menu--is-open {
   background-color: #ceca4c;
   background-color: gray;
 }
