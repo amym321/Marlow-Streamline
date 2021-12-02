@@ -9847,10 +9847,6 @@ select .variant-input{
   flex:0 1 auto;
 }
 
-.header-layout[data-logo-align=center] .mobile-menu-icons {
-  flex:1 1 130px;
-}
-
 /* mobile menu */
 
 [data-button_style=round] .slide-nav__overflow--thumb,
@@ -9883,7 +9879,7 @@ select .variant-input{
   background-color: #ceca4c;
 }
 
-/* header position unchanged when mobile menu open */
+/* header position unchanged when mobile menu open. and mobile header centered */
 @media only screen and (max-width: 768px) {
   .header-up-top { 
     position: absolute; 
@@ -9892,6 +9888,12 @@ select .variant-input{
 
   .margin-up-top {
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .h1 site-header__logo {
+    display: flex;
+    justify-content: center;
   }
 }
 
