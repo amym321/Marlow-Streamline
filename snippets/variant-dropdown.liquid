@@ -1,35 +1,53 @@
 <div class="variant-wrapper variant-wrapper--{{ section.settings.variant_type }} js">
-  <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless section.settings.variant_labels_enable %} hidden-label{% endunless %}"
-    for="SingleOptionSelector-{{ section_id }}-option-{{ forloop.index0 }}">
-    {{ option.name }}
+
+  <label class="smartrr-grp-label"><input type="radio" class="smartrr-grp-input" name="form-sub-type" value="sub" checked="checked" />
+    <div class="smartrr-selling-plan-group-input-display"></div>
+    <span>Subscribe & Save</span>
   </label>
-  <div class="variant-input-wrap"
-    data-index="option{{ forloop.index }}"
-    data-handle="{{ option.name | handleize }}">
-    <select
-      class="variant__input-{{ section_id }}"
-      id="SingleOptionSelector-{{ section_id }}-option-{{ forloop.index0 }}"
-      data-index="option{{ forloop.index }}"
-      data-variant-input>
-      {%- for value in option.values -%}
-        {%- liquid
-          assign variant_label_state = true
-          if product.options.size == 1
-            unless product.variants[forloop.index0].available
-              assign variant_label_state = false
-            endunless
-          endif
-        -%}
-        <option
-          value="{{ value | escape }}"
-          {% if option.selected_value == value %} selected="selected"{% endif %}
-          {% unless variant_label_state %} disabled="disabled"{% endunless %}
-          name="{{ option.name }}"
-          class="variant-input"
-          data-index="option{{ forloop.index }}">
-          {{ value }}
-        </option>
-      {%- endfor -%}
-    </select>
+
+
+
+  <label class="smartrr-grp-label"><input type="radio" class="smartrr-grp-input" name="form-sub-type" value="otp" />
+    <div class="smartrr-selling-plan-group-input-display"></div>
+    <span>One Time purchase</span>
+  </label>
+
+  
+
+  <div data-smartrr-choose-sub>
+    <div data-smartrr-subscription-benefits>
+      <div>3 boxes of tampons, 3 bottles of lubricant</div>
+        {% for group in product.selling_plan_groups %}
+          {% for plan in group.selling_plans %}
+            <div data-smartrr-benefits-all>{{ plan.options[0].value }}</div>
+          {% endfor %}
+        {% endfor %}
+        <div data-smartrr-benefits-all>Skip or Cancel Anytime</div>
+        <div data-smartrr-benefits-all>Free Shipping</div>
+      </div>
+    {% for subvalue in option.values %}
+      {% if subvalue contains 'Subscription' %}
+        {% render 'variant-dropdown-child', option: option, value: subvalue, product: product, loopIndex: forloop.index0, option_index:option_index %}
+      {% endif %}
+    {% endfor %}
+  </div>    
+  
+  <label class="smartrr-grp-label"><input type="radio" class="smartrr-grp-input" name="form-sub-type" value="otp" />
+    <div class="smartrr-selling-plan-group-input-display"></div>
+    <span>One Time purchase</span>
+  </label>
+  <div data-smartrr-choose-otp class="hide">
+    <div data-smartrr-onetime-benefits>
+      <div>1 box of tampons, 1 bottle of lubricant</div>
+      <div data-smartrr-benefits-onetime>Auto-refill deliveries</div>
+      <div data-smartrr-benefits-onetime>Free Shipping</div>
+    </div>
+    {% for subvalue in option.values %}
+      {% unless subvalue contains 'Subscription' %}
+      {% render 'variant-dropdown-child', option: option, value: subvalue, product: product, loopIndex: forloop.index0, option_index:option_index  %}
+      {% endunless %}
+    {% endfor %}
   </div>
+
+
 </div>
