@@ -125,7 +125,7 @@
           "product_video_style": "muted",
           "enable_payment_button": false,
           "product_shipping_callout": "",
-          "variant_type": "dropdown",
+          "variant_type": "button",
           "variant_labels_enable": true,
           "sku_enable": false,
           "inventory_enable": false,
