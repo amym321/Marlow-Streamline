@@ -94,14 +94,14 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "show_newsletter": false,
+          "show_newsletter": true,
           "newsletter_title": "<h3>The Latest Drip💧<h2 style=\"font-size:18px\">Subscribe and receive 10% off your first order when you sign up for Marlow updates.<\/h2>\n<\/h3>",
           "newsletter_richtext": "",
           "show_locale_selector": false,
           "show_currency_selector": false,
           "show_currency_flags": false,
-          "show_social_icons": false,
-          "menu": "footer_2",
+          "show_social_icons": true,
+          "menu": "footer-1",
           "show_payment_icons": false,
           "show_copyright": true,
           "copyright_text": ""
@@ -272,7 +272,6 @@
       },
       "1559098181700": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "1559098181700-0": {
             "type": "image",
@@ -311,7 +310,6 @@
       },
       "1559586187853": {
         "type": "marquee",
-        "disabled": true,
         "settings": {
           "text": "Tampons and lubricant delivered straight to your door. ✸",
           "link": "",
@@ -398,7 +396,6 @@
       },
       "16148039049ff1dd56": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "16148039049ff1dd56-0": {
             "type": "image",
@@ -429,7 +426,6 @@
       },
       "16148039706dc80f17": {
         "type": "text-columns",
-        "disabled": true,
         "blocks": {
           "16148039706dc80f17-0": {
             "type": "text_block",
@@ -1871,7 +1867,6 @@
       },
       "1617045443e0e63e80": {
         "type": "text-and-image",
-        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/marlow_bundle3-46.png",
           "image_width": 500,
@@ -1910,7 +1905,6 @@
       },
       "16182522139868eed7": {
         "type": "featured-collection-slider",
-        "disabled": true,
         "settings": {
           "title": "",
           "description": "",
@@ -1921,6 +1915,7 @@
       },
       "16293224623ea24962": {
         "type": "advanced-content",
+        "disabled": true,
         "blocks": {
           "16293224623ea24962-1": {
             "type": "html",
@@ -1942,7 +1937,6 @@
       },
       "1629328837732ebf63": {
         "type": "background-image-text",
-        "disabled": true,
         "settings": {
           "subtitle": "",
           "title": "The beginning of a new period.",
@@ -1958,7 +1952,6 @@
       },
       "1629328868e9855cbc": {
         "type": "advanced-content",
-        "disabled": true,
         "blocks": {
           "1629328868e9855cbc-0": {
             "type": "image",
@@ -1968,31 +1961,10 @@
               "width": "100%",
               "alignment": "center"
             }
-          },
-          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9": {
-            "type": "html",
-            "disabled": true,
-            "settings": {
-              "code": "We are all Marlow. We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing.",
-              "width": "100%",
-              "alignment": "center"
-            }
-          },
-          "804167e4-7b96-4ea8-895f-3dd9f679312c": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Asset_4.png",
-              "link": "",
-              "width": "100%",
-              "alignment": "top-middle"
-            }
           }
         },
         "block_order": [
-          "1629328868e9855cbc-0",
-          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9",
-          "804167e4-7b96-4ea8-895f-3dd9f679312c"
+          "1629328868e9855cbc-0"
         ],
         "settings": {
           "full_width": true,
@@ -2002,7 +1974,6 @@
       },
       "16293296320ac8aad2": {
         "type": "featured-content",
-        "disabled": true,
         "settings": {
           "title": "",
           "text": "<p>We are all Marlow. <\/p><p>We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing.<\/p>",
@@ -2034,10 +2005,9 @@
       },
       "1634772893fece5c13": {
         "type": "featured-content",
-        "disabled": true,
         "settings": {
           "title": "",
-          "text": "<p><em>Marlow's tampons and lubricant are produced to medical device standards and approved by Health Canada. Marlow tampons and lubricant have been tested together for safety. This product is not intended to diagnose, treat, cure or prevent any disease.<\/em><\/p>",
+          "text": "<p><em>Marlow's tampons and lubricant are produced to medical device standards and approved by Health Canada. Marlow's tampons and lubricant have been tested together for safety. This product is not intended to diagnose, treat, cure or prevent any disease.<\/em><\/p>",
           "align_text": "center",
           "narrow_column": true,
           "enlarge_text": false,
@@ -2046,7 +2016,6 @@
       },
       "1634775953118145c8": {
         "type": "text-columns",
-        "disabled": true,
         "blocks": {
           "1634775953118145c8-1": {
             "type": "text_block",
@@ -2098,7 +2067,6 @@
       },
       "1634919474c8fe8db6": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "1634919474c8fe8db6-0": {
             "type": "image",
@@ -2129,6 +2097,7 @@
       },
       "16358183091b76291c": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "16358183091b76291c-0": {
             "type": "image",
@@ -2159,6 +2128,7 @@
       },
       "1635818313c88ccc0e": {
         "type": "background-image-text",
+        "disabled": true,
         "settings": {
           "subtitle": "",
           "title": "Join the conversation.",
@@ -2174,6 +2144,7 @@
       },
       "163582277477c2503a": {
         "type": "marquee",
+        "disabled": true,
         "settings": {
           "text": "",
           "link": "",
