@@ -57,7 +57,7 @@
       }
     },
     "drawers": {
-      "home": "HOME",
+      "home": "Home",
       "navigation": "Menu",
       "close_menu": "Close menu",
       "expand_submenu": "Expand submenu",

@@ -9841,11 +9841,6 @@ select .variant-input{
   color: #fff;  
 }
 
-/* mobile header */
-.mobile-menu-icons {
-  /* justify-content:flex-end;
-  flex:0 1 auto; */
-}
 
 /* mobile menu */
 
@@ -9876,10 +9871,10 @@ select .variant-input{
 
 /* mobile menu color & underline */
 .green-bg {
-  background-color: #ceca4c;
+  background-color: #ceca4c !important;
 }
 .pink-bg {
-  background-color: #fdf3eb;
+  background-color: #fdf3eb !important;
 }
 .slide-nav__item {
   text-decoration: underline;
@@ -9903,10 +9898,7 @@ select .variant-input{
     display: flex;
     justify-content: center;
   }
-  .site-header__logo {
-    /* display: flex;
-    justify-content: center; */
-  }
+
   .mobile-full-width {
     min-width: 100vw;
   }
@@ -9914,13 +9906,19 @@ select .variant-input{
 
 /* menu items left-justified & font family*/
 @media only screen and (max-width: 768px) {
-  .slide-nav__link {
+  .slide-nav__link,
+  .slide-nav__sublist-link {
     font-family: var(--typeBasePrimary), var(--typeBaseFallback);
-    text-align: justify;
+    text-align: justify;    
+  }
+  .slide-nav__link {
     padding-left: 40px;
   }
+  /* .padding-1, */
+  .slide-nav__sublist-link:not(.slide-nav__sublist-header) {
+    padding-left: 63px;
+  }
 }
-
 
 /* no longer translatingY the menu & padding for bottom color */
 .slide-nav__wrapper  { 

@@ -38,7 +38,7 @@
               </span>
             </button>
             <ul
-              class="slide-nav__dropdown"
+              class="slide-nav__dropdown {% if template_name == 'index' %} green-bg {% endif%} {% if template_name != 'index' %} pink-bg {% endif%}"
               data-parent="{{ child_list_handle }}"
               data-level="2">
               <li class="slide-nav__item border-bottom">
@@ -76,7 +76,7 @@
                         <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
                       </span>
                     </button>
-                    <ul class="slide-nav__dropdown" data-parent="{{ grand_child_link_id }}" data-level="3">
+                    <ul class="slide-nav__dropdown {% if template_name == 'index' %} green-bg {% endif%} {% if template_name != 'index' %} pink-bg {% endif%}" data-parent="{{ grand_child_link_id }}" data-level="3">
                       <li class="slide-nav__item border-bottom">
                         <div class="slide-nav__table">
                           <div class="slide-nav__table-cell slide-nav__return">
