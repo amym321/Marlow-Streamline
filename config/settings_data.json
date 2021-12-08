@@ -85,7 +85,7 @@
           "mobile_logo_width": 200,
           "logo_hide_mobile": false,
           "main_menu_link_list": "menu-2",
-          "show_announcement": false,
+          "show_announcement": true,
           "show_announcement_home_only": false,
           "announcement_text": "🎉 FREE SHIPPING ON ALL SUBSCRIPTIONS! 🎉",
           "announcement_link": ""
