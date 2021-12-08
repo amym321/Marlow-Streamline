@@ -88,7 +88,7 @@
           "show_announcement": true,
           "show_announcement_home_only": false,
           "announcement_text": "🎉 FREE SHIPPING ON ALL SUBSCRIPTIONS! 🎉",
-          "announcement_link": ""
+          "announcement_link": "shopify:\/\/collections\/all"
         }
       },
       "footer": {
@@ -99,10 +99,10 @@
           "newsletter_richtext": "",
           "show_locale_selector": false,
           "show_currency_selector": false,
-          "show_currency_flags": false,
+          "show_currency_flags": true,
           "show_social_icons": true,
           "menu": "footer-1",
-          "show_payment_icons": false,
+          "show_payment_icons": true,
           "show_copyright": true,
           "copyright_text": ""
         }
@@ -387,9 +387,9 @@
           "dacfc08c-4c72-4493-8526-e1ebf8df39df"
         ],
         "settings": {
-          "enable_home": false,
+          "enable_home": true,
           "enable_product": false,
-          "enable_collection": false,
+          "enable_collection": true,
           "title": "What People are Saying:",
           "description": "<p>tag us <a href=\"https:\/\/instagram.com\/youraccount\/\">@wearemarlow<\/a><\/p>"
         }
@@ -997,7 +997,7 @@
             "type": "question",
             "settings": {
               "title": "How do I properly dispose of Marlow tampons?",
-              "text": "<p>Here’s how to dispose of each component you receive:<br\/>The mailer your product was shipped in → compost! (Even our shipping labels are compostable).<br\/>The box your tampons came in → recycle!<br\/>The tampon wrapper → compost!<br\/>The tampon applicator and tampon → your bin (and not the toilet)!<\/p>"
+              "text": "<p>Here’s how to dispose of each component you receive:<br\/>The mailer your product was shipped in → compost! <br\/>The box your tampons came in → recycle!<br\/>The tampon wrapper → compost!<br\/>The tampon applicator and tampon → your bin (and not the toilet)!<\/p>"
             }
           },
           "13064489-b933-4b6d-a60c-31ce94ff492a": {
@@ -1104,7 +1104,7 @@
             "type": "rich-text",
             "settings": {
               "title": "Still haven't found what your looking for?",
-              "text": "<p>drop us a line <a href=\"mailto:info@wearemarlow.com\" title=\"mailto:info@wearemarlow.com\">info@wearemarlow.com<\/a><\/p>",
+              "text": "<p>Drop us a line <a href=\"mailto:info@wearemarlow.com\" target=\"_blank\" title=\"mailto:hello@wearemarlow.com\">hello@wearemarlow.com<\/a><\/p>",
               "align_text": "left"
             }
           }
@@ -1180,6 +1180,7 @@
         "blocks": {
           "d595a101-9192-470f-be7b-44e847b40096": {
             "type": "custom-html",
+            "disabled": true,
             "settings": {
               "full_width": true,
               "space_around": false,
@@ -1228,28 +1229,11 @@
               "alt": false
             }
           },
-          "7f001197-6be4-48cb-8f5e-ba0f1475c713": {
-            "type": "text-and-image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/09A4639.jpg",
-              "image_width": 480,
-              "subtitle": "<h3>Follow us on IG to join <br> the conversation<\/h3>",
-              "title": "",
-              "text": "",
-              "button_label": "@wearemarlow",
-              "button_link": "https:\/\/www.instagram.com\/wearemarlow\/",
-              "button_style": "primary",
-              "layout": "left",
-              "alt": false
-            }
-          },
           "452436ba-f7cb-4105-bc98-493ce648cb28": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Sustainability",
-              "text": "<p>We’ve made changes to ensure that our products are more sustainable than the current standard, and we’ll continue to improve them over time. As Marlow grows, we are reinvesting into research and development to continuously minimize the environmental impact of our products - we’re designing products with you and our planet in mind.<\/p>",
+              "text": "<p>We’ve made changes to ensure that our products are more sustainable than the current standard, and we’ll continue to improve them over time. As Marlow grows, we are reinvesting into research and development to continuously minimize the environmental impact of our products - we’re designing products with you and our planet in mind. Continue reading to learn more.<\/p>",
               "align_text": "left",
               "narrow_column": true,
               "enlarge_text": false,
@@ -1258,7 +1242,6 @@
           },
           "0324bb3f-0c9d-496a-a6fa-3b7fc1bcfce0": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Our Tampons",
               "text": "<p>Here’s the low-down: most drugstore tampons are made from rayon or viscose and are bleached with chlorine. At Marlow, our tampons are made from 100% organic cotton, without the use of chlorine bleaching.<\/p><p><strong>What this means for you: <\/strong><\/p><p>There are no dyes, fragrances, or chemical additives, as these <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC4857673\/\">can irritate the skin<\/a>, and no synthetic fibres, as these <a href=\"https:\/\/www.hindawi.com\/journals\/idog\/1994\/342672\/\">can increase the risk of contracting Toxic Shock Syndrome<\/a>. <\/p><p>With Marlow, you know exactly what you’re getting - organic cotton, and nothing else.<\/p><p><strong>What this means for the environment:<\/strong><\/p><p>For many, tampons are a necessity. That’s why we’re taking steps to minimize the environmental impact of our products.<\/p>",
@@ -1270,7 +1253,6 @@
           },
           "feea7b92-bb1a-4ed4-8560-987495307bea": {
             "type": "text-columns",
-            "disabled": true,
             "settings": {
               "title": "",
               "align_text": "center",
@@ -1300,7 +1282,6 @@
           },
           "459b2018-0db5-462b-b569-2912770fff03": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Our Applicators",
               "text": "<p>Our tampon applicators are a sugar-cane based plastic, allowing us to rely on renewable resources compared to the traditional petroleum-based plastic applicator.<\/p>",
@@ -1312,7 +1293,6 @@
           },
           "79b279e4-9946-4f21-b88c-ac2e652705ea": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Our Packaging",
               "text": "<p>When it comes to our packaging - our tampon wrappers, mailers, and shipping labels are compostable and all box packaging is recyclable!<\/p>",
@@ -1324,7 +1304,6 @@
           },
           "62b81f00-b568-4401-bf7b-827895bce6d1": {
             "type": "image-hero",
-            "disabled": true,
             "settings": {
               "title": "",
               "title_size": 80,
@@ -1340,7 +1319,6 @@
           },
           "f6e3f48b-590e-4529-9a81-9d8a1591a80b": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Our Lubricant",
               "text": "<p>Our lubricant is water-based, which is best for those who have sensitive skin or are prone to vaginal irritation, and it can be used safely with our tampons and with condoms*! Our aloe-based formula is pH-balanced, free of any harsh ingredients, and designed to provide moisture and reduce vaginal dryness.<\/p><p><br\/>*Safe to use with natural rubber latex and polyisoprene condoms.<\/p>",
@@ -1352,7 +1330,6 @@
           },
           "479ac6a7-dbd1-41b2-86d1-beda374f1467": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Check out our ingredients here:",
               "text": "<p>water, aloe barbadensis leaf extract*, sorbitol, hydroxyethyl cellulose, allantoin, lactic acid, tocopherol, potassium sorbate, stevia rebaudiana extract, paeonia albiflora root extract*, passiflora incarnata flower extract*, hyaluronic acid. (* organic ingredients)<\/p>",
@@ -1364,7 +1341,6 @@
           },
           "8b50dd3e-cc56-440d-8fb3-027a86881ce3": {
             "type": "image-hero",
-            "disabled": true,
             "settings": {
               "title": "",
               "title_size": 80,
@@ -1380,7 +1356,6 @@
           },
           "8850d36e-304e-4b81-8b73-7eeca775e5ce": {
             "type": "text-columns",
-            "disabled": true,
             "settings": {
               "title": "<h3>Want to know what we<b> DIDN’T <\/b>include in our ingredient list and why? <br>Check out the details below:<\/h3>",
               "align_text": "center",
@@ -1410,7 +1385,6 @@
           },
           "ecda0c11-84c1-49cd-8939-fca23390853b": {
             "type": "text-columns",
-            "disabled": true,
             "settings": {
               "title": "",
               "align_text": "center",
@@ -1440,7 +1414,6 @@
           },
           "d9e27b74-9006-442a-8630-bcc0d06667d5": {
             "type": "text-columns",
-            "disabled": true,
             "settings": {
               "title": "",
               "align_text": "center",
@@ -1468,13 +1441,27 @@
           },
           "d71a0f51-0cd7-4800-8d25-50a01351bd5c": {
             "type": "rich-text",
-            "disabled": true,
             "settings": {
               "title": "Have any other questions about our products? Want to suggest what we do next?",
               "text": "<p>Send us an email at <br\/><a href=\"mailto:hello@wearemarlow.com \" title=\"mailto:hello@wearemarlow.com \"> hello@wearemarlow.com<\/a>. <\/p><p>We’re always here to chat.<\/p>",
               "align_text": "center",
               "narrow_column": true,
               "enlarge_text": false,
+              "alt": false
+            }
+          },
+          "7f001197-6be4-48cb-8f5e-ba0f1475c713": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/09A4639.jpg",
+              "image_width": 480,
+              "subtitle": "<h3>Follow us on IG to join <br> the conversation<\/h3>",
+              "title": "",
+              "text": "",
+              "button_label": "@wearemarlow",
+              "button_link": "https:\/\/www.instagram.com\/wearemarlow\/",
+              "button_style": "primary",
+              "layout": "left",
               "alt": false
             }
           }
@@ -1484,7 +1471,6 @@
           "9b1a923c-3a64-4c00-b03c-cb338cf9649d",
           "44ddce34-817e-4474-9328-16a8ba1c2f39",
           "78959746-004a-4c28-afeb-d607c76436bc",
-          "7f001197-6be4-48cb-8f5e-ba0f1475c713",
           "452436ba-f7cb-4105-bc98-493ce648cb28",
           "0324bb3f-0c9d-496a-a6fa-3b7fc1bcfce0",
           "feea7b92-bb1a-4ed4-8560-987495307bea",
@@ -1497,7 +1483,8 @@
           "8850d36e-304e-4b81-8b73-7eeca775e5ce",
           "ecda0c11-84c1-49cd-8939-fca23390853b",
           "d9e27b74-9006-442a-8630-bcc0d06667d5",
-          "d71a0f51-0cd7-4800-8d25-50a01351bd5c"
+          "d71a0f51-0cd7-4800-8d25-50a01351bd5c",
+          "7f001197-6be4-48cb-8f5e-ba0f1475c713"
         ],
         "settings": {
           "page_title_enable": false,
@@ -1915,7 +1902,6 @@
       },
       "16293224623ea24962": {
         "type": "advanced-content",
-        "disabled": true,
         "blocks": {
           "16293224623ea24962-1": {
             "type": "html",
@@ -1961,10 +1947,31 @@
               "width": "100%",
               "alignment": "center"
             }
+          },
+          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "code": "We are all Marlow. We strive to live life on our own terms, not by what is dictated by the time of the month or social norms. We crave a deep understanding of our bodies and we prioritize our own wellbeing.",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "804167e4-7b96-4ea8-895f-3dd9f679312c": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Asset_4.png",
+              "link": "",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
           }
         },
         "block_order": [
-          "1629328868e9855cbc-0"
+          "1629328868e9855cbc-0",
+          "ec256722-16aa-4514-a7cd-5bb2ef5e50c9",
+          "804167e4-7b96-4ea8-895f-3dd9f679312c"
         ],
         "settings": {
           "full_width": true,
@@ -2007,7 +2014,7 @@
         "type": "featured-content",
         "settings": {
           "title": "",
-          "text": "<p><em>Marlow's tampons and lubricant are produced to medical device standards and approved by Health Canada. Marlow's tampons and lubricant have been tested together for safety. This product is not intended to diagnose, treat, cure or prevent any disease.<\/em><\/p>",
+          "text": "<p><em>Marlow's tampons and lubricant are produced to medical device standards and approved by Health Canada. Marlow tampons and lubricant have been tested together for safety. This product is not intended to diagnose, treat, cure or prevent any disease.<\/em><\/p>",
           "align_text": "center",
           "narrow_column": true,
           "enlarge_text": false,
