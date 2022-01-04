@@ -62,14 +62,16 @@ if (typeof window.initSmartrr === "undefined") {
       this.$form = this.apiQuerySelectorDataTag(this.tagList.FORM.tag, document, this.tagList.FORM.value);
 
       if (this.$form === null) {
-        // If form wasn't explicitly labeled by merchant with FORM.tag, then we will search for a form
-        // inside our fieldset "smartrr-purchase-options" defined at smartrr-product.liquid.ts
+        /*
+          If form wasn't explicitly labeled by merchant with FORM.tag, then we will search for a form
+          inside our fieldset "smartrr-purchase-options" defined at smartrr-product.liquid.ts 
+        */
         var fieldset = this.apiQuerySelectorDataTag(
           this.tagList.PURCHASE_OPTIONS,
           document,
           this.tagList.FORM.value
         );
-        if (typeof fieldset.closest !== "undefined") {
+        if (fieldset && typeof fieldset.closest !== "undefined") {
           var newForm = fieldset.closest("form");
           if (newForm) {
             this.$form = newForm;
@@ -121,6 +123,62 @@ if (typeof window.initSmartrr === "undefined") {
           },
         };
         return tagList;
+      },
+
+      apiSetupNiceSelect: function (nice, onActiveCallback) {
+        var displayDiv = this.apiQuerySelectorDataTag("data-smartrr-ns-display", nice);
+        var list = this.apiQuerySelectorAllDataTag("data-smartrr-ns-plan", nice);
+        var defaultLi = this.apiQuerySelectorDataTag("data-ns-plan-default", nice);
+
+        function useNiceCallback(_li) {
+          while (displayDiv.firstChild) {
+            displayDiv.removeChild(displayDiv.firstChild);
+          }
+
+          displayDiv.appendChild(_li.cloneNode(true));
+
+          onActiveCallback(_li, nice);
+        }
+
+        if (defaultLi) {
+          useNiceCallback(defaultLi, nice);
+        } else if (list.length > 0) {
+          useNiceCallback(list[0], nice);
+        }
+
+        list.forEach(function (li) {
+          li.addEventListener("click", function () {
+            useNiceCallback(li, nice);
+          });
+        });
+
+        if (typeof window.smartrrNiceSelectList === "undefined") {
+          window.smartrrNiceSelectList = {
+            current: null,
+            list: [],
+          };
+          document.addEventListener("click", function (event) {
+            var prevCurrent = window.smartrrNiceSelectList.current;
+
+            if (prevCurrent) {
+              prevCurrent.classList.remove("smartrr-ns-open");
+              window.smartrrNiceSelectList.current = null;
+            }
+
+            window.smartrrNiceSelectList.list.forEach(function (container) {
+              if (prevCurrent === container) {
+                return;
+              }
+
+              if (container === event.target || container.contains(event.target)) {
+                window.smartrrNiceSelectList.current = container;
+                container.classList.add("smartrr-ns-open");
+                return;
+              }
+            });
+          });
+        }
+        window.smartrrNiceSelectList.list.push(nice);
       },
 
       apiQuerySelectorDataTag: function (dataTag, parent, value) {
@@ -203,6 +261,8 @@ if (typeof window.initSmartrr === "undefined") {
         });
 
         this.productInfo.uiOnGroupChange && this.productInfo.uiOnGroupChange(this, currentInfo);
+
+        currentInfo = this.logic.apiGetCurrentCopy();
 
         if (currentInfo.groupId === "") {
           this.logic.apiChangePlan("");
@@ -763,21 +823,20 @@ if (typeof window.initSmartrr === "undefined") {
           subscribe: this.apiFormatMoney(money.subscribe),
         };
       },
-      
+
       apiFormatMoney: function (value) {
         if (value) {
-          if (typeof Shopify !== 'undefined') {
+          if (typeof Shopify !== "undefined") {
             return Intl.NumberFormat(Shopify.locale, {
               style: "currency",
               currency: Shopify.currency.active,
               minimumFractionDigits: 2,
-            }).format(value / 100).replace('CA', '');
+            }).format(value / 100);
           }
-          return '$' + String(value / 100);
+          return "$" + String(value / 100);
         }
-        return '$INVALID';
+        return "$INVALID";
       },
-
 
       apiGetRegularPrice: function ($div, priceEditCallback, _variantId, _groupId, _planId, _qty) {
         var priceDetails = this.apiGetPriceDetails(_variantId, _groupId, _planId, _qty);
